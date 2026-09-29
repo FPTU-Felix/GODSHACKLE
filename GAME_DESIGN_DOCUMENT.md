@@ -48,24 +48,32 @@ Cả hai phe (Người chơi và Kẻ địch) đều vận hành xoay quanh hai
                                                    -> Kích hoạt [ TRỪNG PHẠT ]
 ```
 
+# 2. HỆ THỐNG CHIẾN ĐẤU CỐT LÕI (2D ACTION PLATFORMER)
+
 ### 2.1. Phe Ta: Bình Thông Nhau "Blood & Guilt"
 1. **Khởi đầu:** `Máu (Blood)` = 100%, `Tội Lỗi (Guilt)` = 0.
-2. **Nỗi Đau Biến Thành Sức Mạnh:** 
-   - Bị quái đánh hoặc chủ động dùng kỹ năng tự rạch máu $\rightarrow$ Máu mất đi biến thành **Điểm Guilt**.
-   - Guilt càng cao $\rightarrow$ Sát thương xuất chiêu tăng vọt (+20% đến +100%), tỉ lệ bạo kích và lượng Nghiệp Tội nhồi vào quái tăng gấp bội.
-3. **Hành Động: SÁM HỐI (Atonement):**
-   - Tiêu thụ toàn bộ điểm **Guilt** tích lũy để đổ ngược lại thành **Máu (Blood)**.
-   - *Áp lực tâm lý:* Sám hối quá sớm thì yếu sát thương, sám hối quá muộn thì quái vung đòn kết liễu trước khi kịp xá tội!
+2. **Nỗi Đau Biến Thành Sức Mạnh (Cuồng Tội):** 
+   - Bị quái đánh hoặc chủ động bấm phím [K] tự rạch máu $\rightarrow$ Máu mất đi biến thành **Điểm Guilt**.
+   - Guilt càng cao $\rightarrow$ Sát thương kiếm tăng vọt (+20% đến +120%), đòn đánh phát sáng rực lửa.
+3. **Hành Động: SÁM HỐI / CHUỘC TỘI (Atonement - Giữ phím [L] để Quỳ Vận Niệm):**
+   - **Không hồi máu tức thì!** Người chơi phải **nhấn và GIỮ phím [L]** trong 1.0 - 1.2 giây.
+   - **Hình tượng:** Hiệp Sĩ cắm thanh cự kiếm xuống sàn đá, quỳ một chân chắp tay cầu nguyện (khóa di chuyển).
+   - **Khung cửa rủi ro (Risk Window):** 
+     - Người chơi có thể chủ động thả tay ra sớm để hủy niệm nếu thấy quái sắp lao vào.
+     - **Nếu bị địch đánh trúng khi đang quỳ $\rightarrow$ Bị NGẮT NIỆM (Interrupted)!** Ăn trọn sát thương và không được hồi giọt máu nào!
+     - Nếu giữ trọn vẹn 1.2s an toàn $\rightarrow$ Toàn bộ Guilt được thanh tẩy chuyển hóa thành Máu tươi!
 
 ### 2.2. Phe Địch: Thanh Nghiệp Tội & Đòn Trừng Phạt (Sin & Verdict)
-1. **Thanh Nghiệp Tội (Sin Burden / Iniquity - 0 đến 100):**
-   - Mọi đòn đánh của phe ta vừa gây sát thương máu, vừa **nhồi điểm Nghiệp Tội** vào linh hồn quái vật.
-2. **Trạng Thái Đè Bẹp Bởi Tội Lỗi (Overwhelmed by Sin):**
-   - Khi thanh Nghiệp Tội chạm đỉnh **100%**:
-     - Quái vật không chịu nổi sức nặng tội nợ $\rightarrow$ **Bị CHOÁNG (Stunned / Khụy gối)** và **MẤT LƯỢT ĐI KẾ TIẾP**.
-3. **Đòn Chí Mạng: TRỪNG PHẠT / PHÁN XÉT (Verdict / Retribution):**
-   - Khi quái bị Choáng, xuất hiện nút lệnh tối thượng: **[ TRỪNG PHẠT ]**.
-   - Giáng một đòn Bạo Kích (Critical) khổng lồ xé xác kẻ thù, đồng thời xả sạch thanh Nghiệp Tội của nó để bắt đầu chu kỳ mới.
+1. **Thanh Nghiệp Tội (Sin Burden - 0 đến 100):**
+   - Đòn chém 1 (+15 Sin), đòn chém 2 (+20 Sin), đòn chém 3 nện đất (+35 Sin).
+2. **Trạng Thái Choáng Khi Đầy Sin (Stagger):**
+   - Khi chạm mốc **100 Sin**: Quái vật bị **CHOÁNG VÁNG (Stagger)** trong **2.5 giây** đầu tiên (lảo đảo, không thể di chuyển hay tấn công).
+   - Trên đầu hiện biểu tượng nhấp nháy: `⚡ [E] TRỪNG PHẠT!`.
+3. **Cơ Chế Khóa Tội (Sin Lock) & Dứt Điểm Tự Do:**
+   - Sau khi hết 2.5s choáng, quái vật tỉnh dậy và tiếp tục truy đuổi tấn công, **NHƯNG thanh Sin vẫn bị khóa cứng ở 100/100** và biểu tượng `[E]` vẫn chờ sẵn.
+   - Người chơi có thể chọn thời điểm thích hợp nhất áp sát và bấm **[E]**:
+     - Hiệp Sĩ lướt vút tới trước, thời gian ngưng đọng (Hit-stop slow motion 0.15s), chém vệt chữ X đỏ huyết xé toạc màn hình.
+     - Gây sát thương chí mạng cực lớn (140 - 300 dmg), reset Sin về 0 và thưởng nóng cho Hiệp Sĩ +25 Guilt!
 
 ---
 

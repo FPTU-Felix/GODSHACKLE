@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://b1m5k8q3n2yap"]
+
+[ext_resource type="Script" uid="uid://j7xrqtuhgb4" path="res://scripts/player.gd" id="1_player_script"]
+[ext_resource type="Script" uid="uid://5mu4umxb5eg5" path="res://scripts/weapons/weapon_dolorosa.gd" id="2_g2els"]
+[ext_resource type="Script" uid="uid://btg37uoa0fbeo" path="res://scripts/combat/hitbox.gd" id="3_qhqgy"]
+[ext_resource type="Script" uid="uid://dvt4ab80nvxc5" path="res://scripts/combat/hurtbox.gd" id="4_dqkch"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(40, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dvsu6"]
+size = Vector2(45.5, 15.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j67fb"]
+size = Vector2(40, 60)
+
+[node name="Player" type="CharacterBody2D" unique_id=1709801651]
+script = ExtResource("1_player_script")
+
+[node name="BodyCollision" type="CollisionShape2D" parent="." unique_id=834445822]
+position = Vector2(0, -40)
+shape = SubResource("RectangleShape2D_body")
+
+[node name="Visual" type="Node2D" parent="." unique_id=758632934]
+
+[node name="VisualBox" type="ColorRect" parent="Visual" unique_id=1168426033]
+offset_left = -20.0
+offset_top = -80.0
+offset_right = 20.0
+color = Color(0.25, 0.28, 0.35, 1)
+
+[node name="HeadIndicator" type="ColorRect" parent="Visual" unique_id=601488887]
+offset_left = -10.0
+offset_top = -77.0
+offset_right = 20.0
+offset_bottom = -52.0
+color = Color(0.65, 0.15, 0.15, 1)
+
+[node name="WeaponDolorosa" type="Node2D" parent="Visual" unique_id=2118930751]
+script = ExtResource("2_g2els")
+
+[node name="SwordVisual" type="ColorRect" parent="Visual/WeaponDolorosa" unique_id=1957241155]
+offset_left = 21.0
+offset_top = -53.0
+offset_right = 66.0
+offset_bottom = -38.0
+
+[node name="Hitbox" type="Area2D" parent="Visual/WeaponDolorosa" unique_id=1913024065]
+script = ExtResource("3_qhqgy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Visual/WeaponDolorosa/Hitbox" unique_id=1142007005]
+position = Vector2(43.75, -45.75)
+shape = SubResource("RectangleShape2D_dvsu6")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=1938560993]
+script = ExtResource("4_dqkch")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=2049114164]
+position = Vector2(0, -30)
+shape = SubResource("RectangleShape2D_j67fb")

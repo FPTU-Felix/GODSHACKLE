@@ -1,115 +1,186 @@
-# BỘ PROMPT AI TẠO HÌNH ẢNH TOÀN DIỆN (AI ART PROMPTS GUIDE)
-**Dự án:** *The Penitent: Blood & Sin*  
-**Phong cách chủ đạo:** Dark Fantasy Grimdark, Gothic Medieval, âm hưởng *Berserk* (Kentaro Miura), *Blasphemous*, *Darkest Dungeon*, ánh sáng tương phản mạnh (Chiaroscuro), sắt gỉ, máu khô, chi tiết sắc nét.
-
-> 💡 **Mẹo sử dụng:** 
-> - Bạn có thể copy trực tiếp các đoạn prompt tiếng Anh bên dưới vào **Midjourney**, **Flux.1**, **Leonardo.ai**, **DALL-E 3** hoặc **Stable Diffusion**.
-> - Đối với nhân vật/quái vật, prompt đã được thêm từ khóa `isolated on dark plain background` để bạn dễ dàng dùng công cụ tách nền (Remove BG) lấy sprite đưa vào Godot.
+# ⚔️ BỘ PROMPT AI TẠO HÌNH ẢNH GAME 2D PLATFORMER / HACK & SLASH
+**Dự án:** *SIN EATER (Hiệp Sĩ Khổ Hạnh)*  
+**Thể loại:** 2D Action Platformer / Metroidvania Hack & Slash (Phong cách *Blasphemous*, *Hollow Knight*, *Dead Cells*, *Berserk*)  
+**Phong cách mỹ thuật:** Dark Fantasy Grimdark, Gothic Trung Cổ, Chiaroscuro tương phản gắt, giáp sắt gỉ gai nhọn, máu sẫm khô, viền nét rõ ràng để đưa vào game 2D.
 
 ---
 
-## 1. STYLE GUIDE CHUNG (THÊM VÀO KHI CẦN)
-* **Phong cách:** `Dark fantasy concept art, grimdark medieval gothic, inspired by Berserk and Blasphemous, gritty texture, chipped rusted steel, dried dark blood, dramatic chiaroscuro lighting, highly detailed, high contrast shadows, painterly digital art, 8k resolution`
-* **Negative Prompt (Nếu dùng Stable Diffusion/Leonardo):** `anime, colorful, cute, smooth 3d, plastic, futuristic, modern, blurry, low quality, oversaturated, cheerful`
+## 💡 1. MẸO VÀNG KHI GEN ẢNH CHO GAME PLATFORMER 2D
+
+Làm game 2D đi cảnh có những yêu cầu **rất khác** so với game thẻ bài hay turn-based:
+
+1. **Góc nhìn bắt buộc phải là Góc Nghiêng (Side-view 2D)**:
+   - Trong prompt luôn phải có: `2d side-view platformer`, `profile view`, `facing left or right`.
+   - Tuyệt đối tránh góc nhìn 3/4 hay góc nhìn từ trên xuống (top-down), vì sẽ làm nhân vật bị lệch góc khi đứng trên sàn đá!
+2. **Quy tắc nền đơn sắc để tách nền (Remove Background) 1 nốt nhạc**:
+   - Luôn thêm: `isolated on solid pure black background` (hoặc `green background`).
+   - Sau khi gen xong, bạn dùng trang web như [remove.bg](https://www.remove.bg) hoặc Photoshop/Godot tách nền trong 2 giây là có ảnh trong suốt (PNG Transparent).
+3. **Cách tạo Dải Chuyển Động (Sprite Sheet)**:
+   - Khi muốn tạo chuyển động chạy hoặc chém nhiều dáng, dùng từ khóa:  
+     `2d sprite sheet sequence, 6 frames animation, character movement progression, grid layout, side scrolling view`.
+4. **Độ cao mặt đất (Ground Baseline)**:
+   - Chân nhân vật phải đứng thẳng thớm trên một mặt phẳng nằm ngang, không vẽ bóng xiên xẹo để đặt hộp va chạm (`CollisionShape2D`) chuẩn xác.
 
 ---
 
-## 2. GÓI HÌNH ẢNH TẦNG 1: HẦM MỘ GÔNG XIỀNG (THE CATACOMBS)
+## 🛡️ 2. GÓI TẠO HÌNH NHÂN VẬT CHÍNH: HIỆP SĨ KHỔ HẠNH (THE PENITENT)
 
-### 2.1. Nhân Vật Chính: Hiệp Sĩ Khổ Hạnh (The Penitent Knight)
-* **Mục đích:** Dùng làm Sprite nhân vật chính đứng trên sàn đấu 2D (Side-view Combat Idle).
-* **Tỉ lệ khung hình:** `--ar 3:4` hoặc `--ar 9:16`
+### 2.1. Dáng Đứng Thủ Kiếm (Idle Pose - Side View)
+* **Mục đích**: Sprite chuẩn của người chơi khi đứng yên trên sàn đá.
+* **Tỉ lệ**: `--ar 3:4` hoặc `--ar 1:1`
 ```text
-Dark fantasy 2d character concept art, full body side view combat stance, a grim penitent knight in heavy chipped rusted black iron armor, inside of armor lined with cruel iron spikes digging into flesh, dried blood seeping from armor joints, featureless completely blind solid iron helmet with no eye openings, forearms wrapped in rusted barbed wire and thorny rosary chains, wielding a colossal heavy executioner greatsword with deep blood channels held in two hands, dark atmospheric lighting, isolated on solid dark grey background, style of Berserk and Blasphemous, painterly masterpiece, 8k --ar 3:4
+2d side-view platformer character sprite, full body profile view facing right, a grim dark fantasy penitent knight in heavy chipped rusted black iron plate armor, barbed wire wrapped around forearms and neck, featureless blind conical iron helmet with no eye slits, holding a colossal two-handed jagged executioner greatsword resting point down on stone ground, solemn ready combat posture, gritty dark textures, style of Blasphemous and Berserk, isolated on solid pure black background, crisp character outline, 8k --ar 3:4
 ```
 
-### 2.2. Avatar / Chân Dung Hiệp Sĩ Khổ Hạnh (Player Portrait)
-* **Mục đích:** Đặt cạnh thanh máu và thanh Guilt trên thanh HUD.
-* **Tỉ lệ khung hình:** `--ar 1:1`
+### 2.2. Dải Ảnh Chạy Ngang (Run Cycle - Sprite Sheet)
+* **Mục đích**: 6 khung hình bước chạy nhịp nhàng để cắt ghép vào `AnimatedSprite2D`.
+* **Tỉ lệ**: `--ar 16:9`
 ```text
-Dark fantasy portrait close-up avatar of a solemn penitent knight, wearing a rusted iron blind helmet with no eye slits, surface engraved with blood drop sigil and thorns, rusted barbed wire wrapped around the neck and collar of heavy chipped steel armor, dramatic rim lighting, shadowy gothic faceplate, grimdark aesthetic, style of Darkest Dungeon and Blasphemous, 8k --ar 1:1
+2d platformer sprite sheet, character run cycle animation sequence, 6 frames progression from left to right, side-view profile of a dark fantasy knight running, tattered cloak flowing behind, heavy iron boots striding, holding greatsword forward, consistent character proportions, isolated on solid pure black background, crisp pixel-perfect lines, Blasphemous aesthetic, high resolution --ar 16:9
 ```
 
----
-
-### 2.3. Boss Tầng 1: Kẻ Cai Ngục Khóc Máu (Sir Gervaise - The Weeping Jailer)
-* **Mục đích:** Dùng làm Sprite Boss đứng đối diện người chơi trên sàn đấu.
-* **Tỉ lệ khung hình:** `--ar 3:4` hoặc `--ar 9:16`
+### 2.3. Dáng Nhảy Lên & Rơi Tự Do (Jump & Fall)
+* **Mục đích**: Ảnh bật nhảy lên không trung và ảnh rơi xuống bục đá.
+* **Tỉ lệ**: `--ar 1:1`
 ```text
-Dark fantasy 2d boss concept art, full body side view, a terrifying 3-meter tall hulking monstrous prison warden, wearing tattered executioner robes and rusted spiked plate armor, wearing an iron death-mask crying continuous streams of dark crimson blood from the hollow eye sockets, carrying a massive rusted iron cage full of starving human skulls strapped to his hunched back, wielding a giant iron key flail in one hand and a brutal spiked executioner club in the other, bloodstained chains, isolated on solid dark grey background, Blasphemous and Berserk style, 8k --ar 3:4
+2d side-view platformer sprite sheet, 2 action poses of a dark fantasy penitent knight, pose 1 leaping upward with greatsword drawn back, pose 2 falling downward with cloak billowing up and sword poised to plunge, profile side view, isolated on solid pure black background, grimdark gothic art, sharp silhouette --ar 1:1
 ```
 
-### 2.4. Avatar / Chân Dung Boss Kẻ Cai Ngục (Boss Portrait)
-* **Mục đích:** Đặt cạnh thanh máu và thanh Sin của Boss.
-* **Tỉ lệ khung hình:** `--ar 1:1`
+### 2.4. Dáng Lướt Thần Tốc (Dash / Dodge Roll)
+* **Mục đích**: Dáng lao vút né đòn kèm hiệu ứng bóng mờ (I-frames).
+* **Tỉ lệ**: `--ar 16:9`
 ```text
-Dark fantasy monster portrait icon, close up of a weeping iron mask crying thick black and crimson blood from hollow eye sockets, rusted barbed iron crown, gruesome executioner collar, terrifying grimdark atmosphere, dramatic cinematic shadows, 8k --ar 1:1
+2d side-view action game sprite, a dark fantasy knight performing a rapid low-profile dash slide forward, body angled forward, greatsword trailing behind, ethereal dark red motion blur trail, afterimage smoke ghost effect, side perspective, isolated on solid black background, high speed dynamic action --ar 16:9
 ```
 
----
-
-### 2.5. Quái Thường 1: Kẻ Tử Tù Đội Mồ (The Chained Sinner)
-* **Mục đích:** Quái vật thường gặp trong hầm mộ.
-* **Tỉ lệ khung hình:** `--ar 3:4`
+### 2.5. Combo 3 Nhát Kiếm (Melee 3-Hit Slash Combo)
+* **Mục đích**: Dải hình 3 đòn chém: Chém ngang $\rightarrow$ Chém hất $\rightarrow$ Nện đất xé toạc.
+* **Tỉ lệ**: `--ar 16:9`
 ```text
-Dark fantasy monster concept art, full body side view, an emaciated grotesque undead prisoner rising from stone, rotting gray flesh over bone, wrapped in torn bloody burial shrouds, both wrists bound by heavy rusted chains ending in broken iron spikes, frantic rabid expression, hollow sunken eyes, feral lunging stance, isolated on dark plain background, grimdark medieval horror, 8k --ar 3:4
+2d action platformer sprite sheet, 3 sequential sword attack poses of a penitent knight, pose 1 rapid horizontal slash with white blade arc, pose 2 powerful upward diagonal swing, pose 3 two-handed colossal downward ground slam shattering stone with dust impact, side profile view, dark fantasy medieval gothic, isolated on pure black background, 8k --ar 16:9
 ```
 
-### 2.6. Quái Thường 2: Chó Săn Hủi (The Blighted Hound)
-* **Mục đích:** Quái thú nhanh nhẹn của hầm mộ.
-* **Tỉ lệ khung hình:** `--ar 4:3`
+### 2.6. Đòn Kết Liễu: Trừng Phạt Chí Mạng (The Verdict Execution Strike)
+* **Mục đích**: Dáng đâm kiếm chữ X dứt điểm khi địch đầy 100 Sin.
+* **Tỉ lệ**: `--ar 1:1`
 ```text
-Dark fantasy creature concept art, a grotesque mutated hunting hound, rotting skin, bony spikes protruding along its jagged spine, jaw split into bloody fangs, rusted collar with broken chain, rabid stance, dark gothic dungeon horror, style of Bloodborne and Blasphemous, isolated on dark grey background, 8k --ar 4:3
-```
-
----
-
-## 3. GÓI HẬU CẢNH CHIẾN TRƯỜNG & KHÁM PHÁ (BACKGROUNDS)
-
-### 3.1. Sàn Đấu Hầm Mộ (Catacomb Battle Arena)
-* **Mục đích:** Ảnh nền chính cho màn hình giao chiến Turn-based tại Tầng 1.
-* **Tỉ lệ khung hình:** `--ar 16:9`
-```text
-Side-view battle stage background for a 2d dark fantasy turn-based game, a grim subterranean catacomb dungeon, floor made of cracked dark stone slabs stained with old dried blood, ancient gothic stone pillars carved with weeping saints, walls lined with thousands of human skulls and skeletal remains, rusted iron cages and barbed chains hanging from the ceiling, faint cold moonlight filtering through a high iron grating, moody dim torchlight casting long flickering shadows, cinematic atmospheric depth, Blasphemous and Darkest Dungeon aesthetic, 8k --ar 16:9
-```
-
-### 3.2. Hành Lang Khám Phá (Exploration Corridor)
-* **Mục đích:** Ảnh nền cho đoạn đi bộ ngang tìm đường và mở cửa ngục.
-* **Tỉ lệ khung hình:** `--ar 16:9`
-```text
-2d side-scrolling exploration background, an endless dark gothic underground prison corridor, massive rusted iron cell doors with small barred viewports, torture racks and iron maidens along the walls, dripping moisture on ancient stone floor, ominous fog rolling along the ground, mysterious flickering candle braziers, oppressive grimdark atmosphere, painterly concept art, 8k --ar 16:9
+2d side-view cinematic execution pose, penitent knight thrusting greatsword in a devastating cross slash, explosive deep crimson blood flare and holy golden divine crackle bursting outward, violent impactful posture, dark fantasy hack and slash climax, isolated on solid black background, sharp graphic novel art style --ar 1:1
 ```
 
 ---
 
-## 4. GÓI ICON KỸ NĂNG & THÁNH TÍCH (UI SKILL ICONS - TỈ LỆ 1:1)
+## ⛓️ 3. GÓI QUÁI VẬT & TRÙM (ENEMIES & BOSSES)
 
-### 4.1. Kỹ Năng: Chém Thường (Basic Slash)
+### 3.1. Quái Thường: Kẻ Tử Tù Bị Xích (The Chained Sinner)
+* **Mục đích**: Quái đi tuần tra dưới hầm mộ, vung xích sắt quất người chơi.
+* **Tỉ lệ**: `--ar 3:4`
 ```text
-Game skill icon, a chipped heavy iron greatsword slashing through the air, leaving a sharp white arc of steel against a dark gothic stone background, blood splatters, grimdark medieval UI icon, high contrast, clean square frame --ar 1:1
+2d side-view platformer enemy sprite, full body profile view, an emaciated grotesque undead prisoner, rotting ashen flesh, torn bloodstained rags, wrists bound in heavy rusted iron chains with spiked flail ends, hunched menacing patrol stance, glowing sunken hollow eyes, isolated on solid pure black background, style of Blasphemous and Darkest Dungeon, 8k --ar 3:4
 ```
 
-### 4.2. Kỹ Năng: Huyết Trảm (Blood Cleave)
+### 3.2. Dải Ảnh Quái Vung Xích & Bị Choáng (Attack & Stagger)
+* **Mục đích**: Ảnh quất xích (tấn công) và ảnh đứng lảo đảo choáng váng khi đầy 100 Sin (Stagger).
+* **Tỉ lệ**: `--ar 16:9`
 ```text
-Game skill icon, a massive greatsword blade dripping with boiling crimson blood and dark unholy red aura, blood spikes bursting outward, dark fantasy skill button, painterly, dark frame, 8k --ar 1:1
+2d platformer monster sprite sheet, 3 action states of chained undead prisoner, frame 1 raising rusted chain overhead with red warning telegraph glow, frame 2 whipping chain forward in violent slash arc, frame 3 dizzy staggered stunned pose clutching head with broken chains dangling, side view, isolated on solid black background --ar 16:9
 ```
 
-### 4.3. Kỹ Năng: Khổ Hình Đập / Nhồi Sin (Sin Smite)
+### 3.3. Quái Nhanh: Chó Săn Hủi (The Blighted Hound)
+* **Mục đích**: Quái thú bò sát đất, lao cắn tầm thấp.
+* **Tỉ lệ**: `--ar 16:9`
 ```text
-Game skill icon, a heavy spiked iron mace crashing downward onto cracked stone, shattering golden divine cracks mixed with purple sin lightning, crushing impact, grimdark RPG ability icon, square frame --ar 1:1
+2d side-view monster sprite, a grotesque mutated hunting hound, rotting skin, protruding spinal bone spikes, jaw split wide showing bloodied jagged fangs, low crouched leaping sprint pose, facing right, side profile platformer asset, isolated on solid pure black background, dark gothic horror --ar 16:9
 ```
 
-### 4.4. Kỹ Năng: Sám Hối (Atonement)
+### 3.4. Trùm Ải 1: Giám Ngục Khóc Than (Sir Gervaise - The Weeping Jailer)
+* **Mục đích**: Boss khổng lồ cao gấp 2.5 lần người chơi ở cuối hầm mộ.
+* **Tỉ lệ**: `--ar 3:4`
 ```text
-Game skill icon, two gauntleted iron hands cupping a glowing radiant red drop of sacred martyr blood, thorn vines wrapping around the light, holy redemption motif, dark fantasy UI icon, 8k --ar 1:1
+2d side-view platformer boss sprite, colossal 3-meter tall hulking executioner prison warden, heavy rusted spiked plate armor, weeping iron death mask crying streams of dark blood, carrying a gigantic iron cage filled with glowing skulls strapped to hunched back, wielding a massive spiked mace in one hand and iron chain flail in other, terrifying boss battle stance, profile view facing left, isolated on solid pure black background, Blasphemous masterpiece --ar 3:4
 ```
 
-### 4.5. Đòn Chí Mạng: Trừng Phạt / Phán Xét (Verdict)
+### 3.5. Chiêu Thức Boss: Nện Đất & Quét Xích (Boss Attack Moves)
+* **Mục đích**: Các đòn đánh uy lực tạo sóng xung kích trên mặt đất của Boss.
+* **Tỉ lệ**: `--ar 16:9`
 ```text
-Game skill icon, a colossal rusted executioner sword thrust straight down into an iron skull, blinding dramatic red and gold divine judgment rays piercing through darkness, ultimate execution strike, high contrast, epic dark fantasy icon --ar 1:1
+2d action game boss sprite sheet, Sir Gervaise boss attack states, pose 1 raising colossal mace high overhead, pose 2 slamming mace into stone floor creating a forward shockwave of stone spikes and red energy, pose 3 sweeping massive chain horizontally across floor level, side-view platformer combat, isolated on solid black background --ar 16:9
 ```
 
-### 4.6. Thánh Tích: Hạt Tràng Hạt "Nước Mắt Cai Ngục" (Tear of the Weeping Jailer)
+---
+
+## 🏛️ 4. GÓI MÔI TRƯỜNG, ĐỊA HÌNH & BỤC NHẢY (ENVIRONMENT & PLATFORMS)
+
+### 4.1. Hậu Cảnh Đa Lớp Cuộn Cảnh (Parallax Background Layers)
+* **Mục đích**: Tạo chiều sâu 3D cho game 2D khi người chơi chạy ngang.
+* **Tỉ lệ**: `--ar 16:9`
+
+#### Lớp Xa (Far Background - Tốc độ cuộn 0.2):
 ```text
-Game item icon, a carved dark obsidian rosary bead shaped like a weeping iron skull shedding a ruby tear, wrapped in fine rusted wire, resting on black velvet, gothic relic item icon, 8k --ar 1:1
+2d platformer far parallax background layer, vast subterranean gothic catacomb cavern, distant towering stone arches, shadowy vaulted ceilings, faint cold pale moonlight through distant high ceiling grates, soft volumetric fog, dark gloomy atmosphere, seamless horizontally repeatable, painterly dark fantasy, 8k --ar 16:9
 ```
+
+#### Lớp Giữa (Mid Background - Tốc độ cuộn 0.5):
+```text
+2d platformer mid parallax background layer, ancient gothic stone pillars carved with sorrowful weeping saints, rusted iron cages and spiked chains hanging from vaulted arches, iron cell doors in background walls, flickering candle sconces, atmospheric haze, transparent background cutout, dark fantasy --ar 16:9
+```
+
+### 4.2. Sàn Đá & Bục Nhảy Nổi (Ground & Floating Platforms)
+* **Mục đích**: Làm gạch lát nền đất và các bục đá để Hiệp Sĩ nhảy lên nhảy xuống.
+* **Tỉ lệ**: `--ar 16:9`
+```text
+2d platformer tileable tileset pieces, dark gothic catacomb architecture, top surface: cracked ancient stone slabs with chipped edges, side cross section: dark masonry bricks stained with dried blood and dark moss, floating stone platform slabs supported by rusted iron brackets, crisp collision edges, side-view 2d game asset, isolated on pure black background --ar 16:9
+```
+
+### 4.3. Đồ Vật Phá Hủy & Tương Tác (Destructible Props & Containers)
+* **Mục đích**: Các vật thể người chơi chém vỡ được trên đường đi.
+* **Tỉ lệ**: `--ar 1:1`
+```text
+2d side-view platformer game props set, 4 items: ancient clay burial urn filled with skeletal dust, rusted iron maiden torture cage, wooden practice dummy wrapped in barbed wire, standing stone shrine brazier with flickering flame, side perspective, crisp clean edges, isolated on pure black background, dark fantasy medieval --ar 1:1
+```
+
+---
+
+## 💥 5. GÓI HIỆU ỨNG HÌNH ẢNH (VFX & SLASH ARCS)
+
+### 5.1. Vệt Kiếm Chém Cung Tròn (Blade Slash Arcs)
+* **Mục đích**: Ghép vào đầu lưỡi kiếm khi người chơi vung đòn.
+* **Tỉ lệ**: `--ar 1:1`
+```text
+2d game visual effect sprite, sharp curved sword slash arc, glowing pure white steel edge with dark crimson blood trail, sharp crescent moon shape, motion blur effect, transparent clean background, high contrast hack and slash VFX asset --ar 1:1
+```
+
+### 5.2. Vệt Chém Chữ X Trừng Phạt (Verdict Cross Slash VFX)
+* **Mục đích**: Hiệu ứng bùng nổ khi bấm phím E Trừng Phạt.
+* **Tỉ lệ**: `--ar 1:1`
+```text
+2d game impact VFX, large stylized explosive X-shaped double slash mark, glowing burning holy crimson and golden divine sparks bursting outward, shattering crack lines, sharp comic book graphic impact effect, isolated on pure black background --ar 1:1
+```
+
+### 5.3. Bụi Đất Va Chạm (Ground Dust & Shockwave)
+* **Mục đích**: Bụi bay lên khi nhân vật tiếp đất hoặc nện kiếm đòn 3.
+* **Tỉ lệ**: `--ar 1:1`
+```text
+2d platformer dust impact particle effect, horizontal shockwave cloud puff rising from ground impact, stylized puff of grey ash and stone debris flying left and right, clean cartoon stylized VFX, isolated on pure black background --ar 1:1
+```
+
+---
+
+## 🎮 6. GÓI GIAO DIỆN HÀNH ĐỘNG (ACTION HUD & ICONS)
+
+### 6.1. Khung Thanh Máu & Guilt (Vessel HUD Frame)
+* **Mục đích**: Thanh hiển thị Máu/Guilt ở góc trên bên trái màn hình.
+* **Tỉ lệ**: `--ar 16:9`
+```text
+2d action RPG health bar UI frame, ornate gothic dark metal border adorned with thorny iron vines and weeping skull motif, slots for red blood bar and dark purple guilt bar, weathered rusted iron texture, clean UI game asset, transparent background --ar 16:9
+```
+
+### 6.2. Nút Bấm Tương Tác: [E] TRỪNG PHẠT!
+* **Mục đích**: Icon nhấp nháy trên đầu quái khi nó đạt 100 Sin.
+* **Tỉ lệ**: `--ar 1:1`
+```text
+Game UI prompt button icon, gothic golden glowing letter E inside an ornate spiked iron diamond frame, glowing with divine radiant golden and red light, execution trigger indicator, pixel perfect clean game UI asset, transparent background --ar 1:1
+```
+
+---
+
+> 🚀 **Gợi ý sử dụng**: Giờ đây, bất kỳ khi nào bạn cần thêm một động tác chạy, một cú chém hay một bục đá, bạn chỉ cần copy prompt tương ứng bên trên dán vào Midjourney/Leonardo/Flux là có ngay tài nguyên chuẩn chỉ cho game 2D Platformer!
