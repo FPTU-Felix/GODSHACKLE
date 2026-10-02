@@ -1,383 +1,321 @@
 # 🎙️ KỊCH BẢN THU ÂM & LỒNG TIẾNG AI (VOICEOVER SCRIPT)
-**Dự án:** *SIN EATER: HIỆP SĨ KHỔ HẠNH (The Penitent)*  
-**Mục đích:** Kịch bản chi tiết từng phân cảnh dùng để đưa trực tiếp vào các công cụ AI Voice (như ElevenLabs, Play.ht, v.v.).  
+**Dự án:** *GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)*  
+**Mục đích:** Kịch bản lồng tiếng chi tiết từng phân cảnh dùng để đưa trực tiếp vào các công cụ AI Voice (ElevenLabs, Play.ht, v.v.).  
 **Ngôn ngữ thiết kế:** Song ngữ (Tiếng Anh Gothic cổ kính chuẩn quốc tế + Bản dịch Tiếng Việt cảm xúc).
 
 ---
 
 ## 🎭 HƯỚNG DẪN CHỈ ĐẠO DIỄN XUẤT AI VOICE (VOICE PROFILES)
 
-1. **Người Kể Chuyện (The Narrator / Lời Kể Thâm Trầm):**
-   - **Tông giọng:** Trầm khàn (gravelly), mệt mỏi, nặng trĩu bi thương, ngữ điệu Anh cổ (Medieval British/Gothic), nhịp độ chậm rãi, có nhiều khoảng lặng thở dài giữa các câu.
-   - **Gợi ý Voice trên ElevenLabs:** *Marcus*, *George*, hoặc *Adam* (Tăng `Stability` ~ 65%, `Clarity` ~ 75%, hạ thấp `Speed` xuống 0.85x - 0.9x).
-
-2. **Các Boss & Nhân vật:**
-   - **Sir Gervaise:** Giọng một ông lão hiệp sĩ từng uy nghiêm nay nghẹn ngào, run rẩy vì máu đen tràn ứ nơi cổ họng.
-   - **Mẹ Agnes:** Giọng thì thầm cuồng loạn, rít nhẹ qua kẽ răng, vừa như người mẹ ru con, vừa như bóng ma u uất.
-   - **Người Đội Phó:** Giọng kim loại vang vọng, gằn từng tiếng căm phẫn, hòa lẫn tiếng thì thầm của hàng chục binh sĩ.
+1. **Người Kể Chuyện (The Narrator):**
+   - **Tông giọng:** Trầm khàn (gravelly), mệt mỏi, nặng trĩu bi thương, ngữ điệu Anh cổ (Medieval Gothic), nhịp độ chậm rãi.
+   - **Gợi ý ElevenLabs:** *Marcus* hoặc *Adam* (Tăng `Stability` ~ 65%, `Clarity` ~ 75%, `Speed` 0.85x).
+2. **Cổ Thần Trật Tự Aethelgard (Ngự Trong Kiếm Đơn):**
+   - **Tông giọng:** Kiêu ngạo, vang vọng như tiếng chuông đồng (noble, echoing, cold resonance), thanh khiết nhưng lạnh buốt, ghê tởm sự hỗn loạn.
+   - **Gợi ý ElevenLabs:** *Antony* hoặc *George* (Thêm hiệu ứng Hall Reverb nhẹ).
+3. **Cổ Thần Bóng Tối Umbrath (Ngự Trong Cặp Vuốt):**
+   - **Tông giọng:** Ranh mãnh, thì thầm từ bóng tối sâu thẳm (sinister shadowy whisper), khàn nhẹ, quyến rũ kẻ thù chìm vào màn đêm.
+   - **Gợi ý ElevenLabs:** *Fin* hoặc *Clyde* (Pitch Shift -1, Whisper filter).
+4. **Cổ Thần Tham Ăn Vorax (Ngự Trong Lưỡi Liềm):**
+   - **Tông giọng:** Đói khát vô tận, tiếng thở phì phò ướt át từ miệng vực sâu (ravenous hollow gargle).
+   - **Gợi ý ElevenLabs:** *Gore* hoặc *Fin* (Pitch Shift -3).
+5. **Cổ Thần Cuồng Nộ Vargon (Ngự Trong Đại Kiếm):**
+   - **Tông giọng:** Tiếng gầm rền vang như núi lửa phun trào, tràn ngập cơn điên loạn khát máu.
+   - **Gợi ý ElevenLabs:** *Adam* (Pitch Shift -2, Distortion nhẹ).
+6. **Đoàn Trưởng Valerius (The Grand Commander $\rightarrow$ The Doomsday Usurper):**
+   - **Tông giọng:** Ban đầu ấm áp, hào sảng, uy quyền của một người anh cả; về sau chuyển sang đau đớn, nghẹn ngào, hoảng loạn bị dồn nén trước ngày tận thế cận kề, giọng nói chứa chan nước mắt và sự tuyệt vọng cực đoan.
+   - **Gợi ý ElevenLabs:** *Brian* hoặc *Callum* (Tăng `Emotional Exaggeration`, thêm hiệu ứng nghẹn giọng).
 
 ---
 
-## 🎬 PHÂN CẢNH 1: CINEMATIC MỞ ĐẦU GAME (GAME PROLOGUE)
-*(Màn hình đen tuyền. Tiếng chuông nhà thờ xa xăm ngân vang từng tiếng nặng nề... leng... keng... Kèm theo tiếng gió rít qua khe đá và tiếng than khóc ai oán).*
+## 🎬 PHÂN CẢNH 1: CINEMATIC MỞ ĐẦU (GAME PROLOGUE)
+*(Màn hình đen tuyền. Tiếng gió rít qua chiến trường đổ nát, tiếng xích sắt va vào đá lạnh... leng keng...)*
 
 ````carousel
 ```markdown
 [NARRATOR - TIẾNG ANH (DÙNG ĐỂ TẠO VOICE AI)]
 [deep, slow, weary voice]
-"Sancta Aurelia... [pause 1.0s]
-Once a cradle of radiant faith. Now... an open grave of iron and rotting bones. [pause 1.5s]
+"When the ancient crown shattered... [pause 1.2s]
+The empire drowned in blood. [pause 1.5s]
 
-When the High Pontiff sought to wash away the sins of a kingdom in a single night... [pause 1.0s]
-he did not bring salvation. [pause 1.0s]
-He brought forth the Flood of Black Bile. [pause 1.5s]
+Four armies rose from the ashes. [pause 1.0s]
+Four banners, tearing the flesh of the realm... [pause 1.0s]
+Each clutching a weapon forged to cage a God. [pause 2.0s]
 
-Man's darkest desires... their greed, their lust, their unspoken cruelties... [pause 1.0s]
-turned flesh into monsters. And faith... into an eternal torment. [pause 2.0s]
+The Shadow. The Feast. The Iron. [pause 1.2s]
+And the Order. [pause 1.5s]
 
-And amidst that hell... [pause 0.8s]
-A knight of the Rustbound Order turned his back. [pause 1.2s]
-He slammed the iron gate on his sworn brothers... [pause 1.0s]
-and chose to run. [pause 2.5s]
+Many sought the blade of Order. [pause 0.8s]
+Even our noble Commander reached for its hilt... [pause 0.8s]
+Only to be scorched by its divine disdain. [pause 1.5s]
 
-But in this land... [whisper]
-Guilt does not let you die."
+The blade chose only one. [pause 1.0s]
+A silent vanguard. A mortal tethered to an unbending God. [pause 1.8s]
+
+'Subdue the three rebellions,' the Commander decreed. [pause 1.0s]
+'Bring me their sacred arms. Let us end this civil slaughter... [pause 0.8s]
+and restore the throne.' [pause 1.5s]
+
+And so, we marched."
 ```
 <!-- slide -->
 ```markdown
 [BẢN DỊCH TIẾNG VIỆT (PHỤ ĐỀ / HOẶC ĐỌC TIẾNG VIỆT)]
-(Giọng trầm khàn, chậm rãi, nặng trĩu nỗi đau)
-"Sancta Aurelia...
-Từng là cái nôi rực rỡ nhất của đức tin. Nhưng giờ đây... chỉ còn là một hố chôn tập thể của sắt thép và xương tàn mục ruỗng.
+(Giọng trầm khàn, chậm rãi, nặng trĩu bi thương)
+"Khi vương miện cổ đại vỡ tan...
+Đế quốc chìm ngập trong biển máu.
 
-Khi Giáo Hoàng tìm cách gột rửa tội lỗi của cả một vương quốc chỉ trong một đêm trăng máu...
-Lão không đem lại sự cứu rỗi.
-Lão đã giải phóng cơn đại hồng thủy của Bùn Đen và Dịch Bệnh.
+Bốn cánh quân trỗi dậy từ tro tàn.
+Bốn ngọn cờ xé rách da thịt vương quốc...
+Mỗi phe nắm giữ một Thần Khí giam cầm Cổ Thần.
 
-Những dục vọng đen tối nhất của con người... sự tham lam, dâm ô, và những tàn bạo giấu kín...
-Đã biến máu thịt thành quái thai. Và biến đức tin... thành một bản án đày đọa vĩnh hằng.
+Bóng Tối. Phàm Thực. Thiết Thạch.
+Và Trật Tự.
 
-Và giữa biển địa ngục ấy...
-Một người hiệp sĩ của Hội Cấm Vệ Rỉ Sét đã quay lưng bỏ chạy.
-Hắn kéo sập cánh cổng sắt ngàn cân nhốt chết những người anh em vào sinh ra tử...
-Và chọn cách tháo thân trong nỗi hèn nhát nhục nhã.
+Biết bao kẻ đã thèm khát thanh kiếm Trật Tự.
+Ngay cả Đoàn trưởng cao quý của chúng ta từng chạm tay vào chuôi kiếm...
+Chỉ để nhận lấy ngọn lửa thiêu đốt của sự chối từ.
 
-Nhưng tại vùng đất bị nguyền rủa này...
-Mặc cảm tội lỗi... không cho phép ngươi được quyền chết."
+Thanh kiếm chỉ chọn duy nhất một người.
+Một hiệp sĩ tiên phong câm lặng. Một kẻ phàm trần được Cổ Thần công nhận.
+
+'Hãy dẹp tan ba cánh loạn quân,' Đoàn trưởng hạ lệnh.
+'Hãy mang Thần Khí của chúng về đây. Chúng ta sẽ chấm dứt cuộc nội chiến tương tàn này...
+và lập lại ngai vàng.'
+
+Và thế là, chúng ta xuất quân."
 ```
 ````
 
 ---
 
-## ⚡ PHÂN CẢNH 2: TỈNH THỨC & TIẾNG GAI NHỌN NUNG CHẢY (THE AWAKENING)
-*(Hiệp Sĩ mở mắt giữa đống tro tàn hoang phế. Tiếng kim loại nóng chảy xèo xèo vào da thịt. Hiệp Sĩ rên lên một tiếng nghẹn ngào vì gai sắt bắt đầu trồi ngược từ xương xuyên qua lớp giáp).*
+## ⚡ PHÂN CẢNH 2: TIẾNG NÓI CỦA THẦN TRẬT TỰ AETHELGARD (ẢI 1)
+*(Hiệp Sĩ bước vào Pháo Đài Ngầm của Quân Sát Thủ. Tiếng phi đao xé gió rít qua trong bóng tối. Thanh kiếm trên tay phát sáng vàng kim, giọng nói kiêu hãnh vang lên trong tâm trí).*
 
 ````carousel
 ```markdown
-[NARRATOR - TIẾNG ANH]
-[low, solemn, painful cadence]
-"Awake, Penitent One. [pause 1.5s]
+[AETHELGARD - CỔ THẦN TRẬT TỰ]
+[noble, cold, echoing resonance]
+"Do not flail like a dying beast, mortal. [pause 1.0s]
+Chaos disgusts me. [pause 1.2s]
 
-Feel the cold iron melting into your marrow. [pause 1.2s]
-Let the thorns tear your flesh with every step... [pause 0.8s]
-with every breath you take. [pause 1.5s]
+I did not bind myself to your flesh so you could swing wildly in the dark. [pause 1.5s]
 
-This is not armor. [pause 1.0s]
-This is your shame made manifest. [pause 2.0s]
+Raise the steel. [pause 0.6s]
+Watch their blades. [pause 0.8s]
+Meet their frenzy with absolute stillness. [pause 1.5s]
 
-Take up the Dolorosa. [pause 1.2s]
-Offer your blood to its rusted blade. [pause 1.5s]
-Walk back into the dark... [pause 1.0s]
-and face the debt you owe."
+Only when your parry rings true... [pause 1.0s]
+shall my divine light sever their sins."
 ```
 <!-- slide -->
 ```markdown
 [BẢN DỊCH TIẾNG VIỆT]
-(Giọng trang nghiêm, buốt nhói)
-"Tỉnh giấc đi, Kẻ Khổ Hạnh.
+(Giọng kiêu hãnh, lạnh lẽo, âm vang như chuông đồng)
+"Đừng vung kiếm loạn xạ như một con thú giãy chết, hỡi kẻ phàm.
+Sự hỗn loạn làm ta ghê tởm.
 
-Hãy cảm nhận sắt thép hoen rỉ đang nung chảy hòa lẫn vào tủy xương ngươi.
-Hãy để hàng ngàn chiếc gai sắt xé toạc da thịt trong từng bước chân ngươi bước...
-Trong từng hơi thở nhọc nhằn ngươi trút ra.
+Ta không ràng buộc linh hồn vào thân xác ngươi để ngươi chém chém bổ bổ trong bóng tối.
 
-Đây không phải là một bộ giáp bảo hộ.
-Đây là hình hài xác thịt của nỗi nhục nhã mang tên ngươi.
+Hãy nâng gươm lên.
+Nhìn thẳng vào lưỡi đao của chúng.
+Đáp trả sự cuồng bạo bằng sự điềm tĩnh tuyệt đối.
 
-Hãy cầm lấy thanh cự kiếm Dolorosa.
-Hãy dâng hiến máu từ cổ tay rách nát để tôi luyện lưỡi kiếm sầu bi.
-Bước ngược lại vào bóng tối sâu thẳm đi...
-Và đối mặt với món nợ máu mà ngươi đã nợ trần gian."
+Chỉ khi nhát đỡ đòn của ngươi ngân vang chuẩn xác...
+Ánh sáng thần thánh của ta mới chịu ban phát để rạch đôi tội lỗi của chúng."
 ```
 ````
 
 ---
 
-## ⚔️ PHÂN CẢNH 3: CHƯƠNG 1 - SIR GERVAISE (ÂN SƯ DẠY KIẾM)
-
-### 3.1. Thoại Trước Trận Đánh (Gặp Lại Thầy Cũ):
-*(Sir Gervaise lê bước chùy gai khổng lồ, chiếc lồng sọ trên lưng rên xiết. Hốc mắt ông trào ra hai dòng máu đen, nhìn chằm chằm vào thế đứng của bạn).*
+## 🌑 PHÂN CẢNH 3: THU HỒI CẶP VUỐT BÓNG TỐI UMBRATH (KẾT THÚC ẢI 1)
+*(Sát Thủ Vô Ảnh Corina ngã gục. Umbrath bung xích bị Thần Trật Tự ghìm chặt. Bạn tra Cặp Vuốt vào tay, tà khí bóng tối lập tức quấn lấy cổ tay).*
 
 ````carousel
 ```markdown
-[SIR GERVAISE - TIẾNG ANH]
-[old, trembling voice, choked with black blood]
-"That stance... [pause 1.0s] That grip upon the hilt... [pause 1.5s]
-I taught you to swing steel to shield the defenseless... [pause 1.0s]
-Not to lock the prison doors and turn your back upon your master! [pause 2.0s]
+[UMBRATH - CỔ THẦN BÓNG TỐI]
+[sinister shadow whisper, chuckling]
+"Ah... the rigid knight takes up the claws of midnight. [pause 1.2s]
+Do you feel the ink crawling under your skin? [whisper]
 
-[sighs heavily]
-Look around you, boy! [pause 0.8s]
-Their bones still gnaw at my soul! [pause 1.2s]
-Have you returned to mock my torment... [pause 1.0s]
-OR TO DIE BY THE BLADE I GAVE YOU?!"
+Strike them. Carve them. [pause 0.8s]
+Turn their warm red blood into cold black rot. [pause 1.5s]
+
+And when the black ink swells their veins to bursting... [pause 1.0s]
+Slip into the shadows. [pause 0.6s]
+Six flashes of the blade... and tear their world apart!"
 ```
 <!-- slide -->
 ```markdown
-[SIR GERVAISE - TIẾNG VIỆT]
-(Giọng già nua, nghẹn ngào trong máu đen)
-"Thế đứng này... Cách ngươi nắm chặt chuôi kiếm này...
-Năm xưa, ta đã dạy ngươi vung kiếm lên để bảo vệ những kẻ yếu thế...
-Chứ không phải để cài then cửa ngục và quay lưng bỏ mặc người thầy già này!
+[BẢN DỊCH TIẾNG VIỆT]
+(Thì thầm ma quái từ bóng tối, cười khẩy)
+"A... hiệp sĩ cứng nhắc nay đã mang trên mình cặp vuốt của màn đêm.
+Ngươi có cảm nhận được dòng mực đen đang bò dưới da thịt mình không?
 
-Hãy nhìn xung quanh ngươi xem, đứa học trò phản phúc!
-Xương trắng của những kẻ chết đói vẫn đang gặm nhấm linh hồn ta từng đêm!
-Ngươi quay lại đây để nhạo báng nỗi thống khổ của ta...
-HAY ĐỂ CHẾT DƯỚI CHÍNH LƯỠI KIẾM MÀ TA ĐÃ TRAO VÀO TAY NGƯƠI?!"
+Hãy cào xé chúng. Hãy khắc sâu vết thương.
+Biến dòng máu đỏ ấm nóng của chúng thành vũng máu đen mục rữa.
+
+Và khi ngấn máu đen ấy căng tràn đến độ vỡ toạc...
+Hãy tan biến vào bóng đêm.
+Sáu vệt chém xé gió... và bẻ gãy sinh mệnh của chúng!"
 ```
 ````
 
-### 3.2. Lời Trăng Trối Sau Cắt Cảnh Kết Liễu [E]:
-```markdown
-[SIR GERVAISE - TIẾNG ANH]
-[fading whisper, relieved]
-"Your strike... [pause 1.0s] was true at last, my boy. [pause 1.5s]
-The weeping... [sigh] has finally ceased..."
-
-[BẢN DỊCH TIẾNG VIỆT]
-(Tiếng thì thầm thanh thản, mờ dần)
-"Nhát kiếm của con... cuối cùng đã chuẩn xác rồi, con trai...
-Nước mắt... cuối cùng cũng đã ngừng rơi..."
-```
-
 ---
 
-## 🕯️ PHÂN CẢNH 4: CHƯƠNG 2 - MẸ AGNES (NẠN NHÂN ĐỒNG LÕA)
-
-### 4.1. Thoại Trước Trận Đánh (Nhận Ra Kẻ Gác Cổng):
-*(Bức tượng sứ trắng nứt toác, sáp đen chảy ròng ròng. Bà ôm chặt lấy vách đá vôi nơi đứa con bị chôn sống).*
+## 👑 PHÂN CẢNH 4: KHÚC KHẢI HOÀN BIẾN THÀNH ĐỊA NGỤC (CHƯƠNG 4 — NGAI VÀNG PHẢN BỘI)
+*(Kinh đô hoàng kim. Cờ xí rợp trời. Toàn quân reo hò: "Đoàn Trưởng vạn tuế! Hiệp Sĩ Tiên Phong vạn tuế!". Bạn quỳ gối trước bậc thềm ngai vàng, dâng lên 3 món Thần Khí thu được. Đoàn trưởng Valerius bước tới, đôi mắt đỏ hoe, run rẩy đặt tay lên vai bạn).*
 
 ````carousel
 ```markdown
-[MOTHER AGNES - TIẾNG ANH]
-[disturbed whisper turning into a scream]
-"Hush... tread softly... [pause 1.0s]
-My child is sleeping behind these stones... [pause 1.5s]
+[VALERIUS - THE TRAGIC ECLIPSE]
+[voice trembling with grief and suppressed panic, weeping softly]
+"Rise, my brother... [pause 1.2s]
+You brought them all to me. The Claws, The Scythe, The Greatsword. [pause 1.5s]
+You did what no mortal should have been able to do. [pause 1.2s]
 
-[sniffs the air]
-Wait... [pause 0.8s] I know that stench. [pause 1.2s]
-That cold, rusted guard armor! [pause 1.5s]
-YOU! [pause 0.8s] You stood outside that door! [pause 1.0s]
-You stood silent as they plastered the wall... [pause 0.8s]
-as my baby choked on stone dust! [pause 2.0s]
+Look at them shouting our names. [pause 1.0s]
+They believe peace has returned. [chuckle bitterly]
+They do not know... [voice drops to a horrified whisper]
+They have not seen what the Prophetic Shard revealed to me. [pause 1.8s]
 
-Coward! Accomplice of wolves! [pause 1.0s]
-LET THE BLACK WAX BLIND YOUR EYES SO YOU MAY NEVER HARM HIM AGAIN!"
+The Oldest God is stirring in the deep abyss. [pause 1.0s]
+The bedrock beneath our boots is already groaning! [pause 1.2s]
+When it awakens... [pause 0.6s]
+Every city... every child... every one of our brothers will turn to ash! [pause 1.8s]
+
+I knelt before the God of Order. I reached for its hilt. [pause 1.0s]
+And it scorched my flesh with pure disdain: [pause 0.8s]
+'Your extinction is merely a natural cycle.' [bitter sneer]
+
+Gods do not care about mankind, brother! [crying out]
+Begging them is suicide! [pause 1.2s]
+To slay an Old God... [pause 0.8s]
+HUMANITY MUST HAVE A GOD OF ITS OWN! [shouting in agony]
+
+Ten thousand of our brothers will die anyway when the Oldest God wakes. [pause 1.2s]
+Forgive me... [weeping]
+I will bear the eternal damnation of hell alone! [pause 1.5s]
+Their blood will forge my divinity... [pause 1.0s]
+And with their souls, I SHALL SLAY THE OLDEST GOD!"
 ```
 <!-- slide -->
 ```markdown
-[MOTHER AGNES - TIẾNG VIỆT]
-(Giọng thì thầm u uất rồi thét lên căm phẫn)
-"Suỵt... bước khẽ thôi...
-Con ta đang ngủ ngoan trong vách đá kia mà...
+[BẢN DỊCH TIẾNG VIỆT]
+(Giọng run rẩy trong nỗi đau đớn, hoảng loạn bị kìm nén, nghẹn ngào trong nước mắt)
+"Đứng lên đi, người anh em của ta...
+Ngươi đã mang đủ tất cả về cho ta. Cặp Vuốt, Lưỡi Liềm, và Đại Kiếm.
+Ngươi đã làm được điều mà không một người phàm nào làm nổi.
 
-Khoan đã... Ta ngửi thấy mùi hôi tanh quen thuộc ấy.
-Bộ giáp sắt cấm vệ lạnh tanh kia!
-CHÍNH LÀ NGƯƠI! Ngươi đã đứng canh ngoài cánh cửa ngày hôm đó!
-Ngươi trơ mắt đứng im khi bọn họ trát vữa bịt kín vách đá...
-Khi đứa con đỏ hỏn của ta nghẹt thở trong bụi vôi!
+Hãy nhìn xem, toàn quân đang reo hò tên của chúng ta.
+Họ tin rằng hòa bình đã trở lại.
+Họ không biết...
+Họ chưa từng nhìn thấy những gì Mảnh Di Vật Tiên Tri đã phơi bày trước mắt ta.
 
-Kẻ hèn hạ! Tên đồng lõa của loài lang sói!
-HÃY ĐỂ SÁP NẾN ĐEN NÀY BỊT KÍN MẮT NGƯƠI, ĐỂ NGƯƠI KHÔNG THỂ LÀM HẠI NÓ NỮA!"
+Đấng Thủy Tổ Cổ Xưa Nhất đang cựa mình dưới đáy vực sâu.
+Nền đá dưới chân chúng ta đã bắt đầu rên xiết rồi!
+Khi nó tỉnh giấc...
+Mọi thành trì... mọi đứa trẻ... và mười vạn người anh em này... tất cả sẽ tan thành tro bụi!
+
+Ta từng quỳ xuống trước Thần Trật Tự. Ta đã chạm vào chuôi kiếm đó.
+Và nó thiêu đốt da thịt ta bằng sự khinh miệt lạnh lùng:
+'Sự diệt vong của loài người các ngươi chỉ là chu kỳ tự nhiên của trời đất.'
+
+Cổ Thần không hề đoái hoài đến chúng ta, người anh em ạ!
+Cầu xin chúng là tự sát!
+Muốn tiêu diệt một Cổ Thần...
+NHÂN LOẠI PHẢI CÓ MỘT VỊ THẦN CỦA RIÊNG MÌNH!
+
+Mười vạn người anh em này đằng nào cũng sẽ chết trong miệng Đấng Thủy Tổ.
+Hãy tha thứ cho ta...
+Một mình ta sẽ gánh chịu bản án nguyền rủa ngàn đời của địa ngục!
+Máu thịt của họ sẽ đúc nên thần tính cho ta...
+Và bằng chính linh hồn của họ, TA SẼ CHÉM CHẾT ĐẤNG THỦY TỔ CỨU THẾ GIỚI NÀY!"
 ```
 ````
 
-### 4.2. Lời Trăng Trối Sau Cắt Cảnh Kết Liễu [E]:
-```markdown
-[MOTHER AGNES - TIẾNG ANH]
-[gentle, ethereal maternal voice]
-"Ah... [pause 1.0s] The wall has broken. [pause 1.2s]
-My child... [pause 0.8s] your little hands are warm again..."
-
-[BẢN DỊCH TIẾNG VIỆT]
-(Giọng người mẹ dịu dàng, siêu thoát)
-"A... Bức tường đá đã vỡ rồi.
-Con ta ơi... bàn tay nhỏ bé của con... cuối cùng đã ấm lại rồi..."
-```
-
 ---
 
-## ⚙️ PHÂN CẢNH 5: CHƯƠNG 3 - NGƯỜI ĐỘI PHÓ (TIỂU ĐỘI CẤM VỆ)
-
-### 5.1. Thoại Trước Trận Đánh (Binh Đoàn Căm Thù):
-*(Khối thịt sắt cao 4 mét gầm rít. Đội Phó cầm ngọn cờ rách nát chỉ thẳng vào mặt bạn).*
+## ⚔️ PHÂN CẢNH 5: LỜI HIỆU TRIỆU CUỐI CÙNG & TRẬN CHIẾN NGĂN CHẶN
+*(Bạn đứng dậy giữa biển tro tàn của đồng đội. Thanh Kiếm Trật Tự rực sáng ánh kim rực rỡ hơn bao giờ hết. Cổ Thần Aethelgard cất tiếng gầm thịnh nộ).*
 
 ````carousel
 ```markdown
-[THE VICE-CAPTAIN - TIẾNG ANH]
-[metallic, distorted, overlapping chorus of dozens of dead soldiers]
-"Captain... [pause 0.8s] Our noble Captain... [pause 1.5s]
+[AETHELGARD - THẦN TRẬT TỰ PHẪN NỘ]
+[thunderous, majestic fury]
+"Sacrilege! [reverb]
+A worm feasting upon the blood of its brothers to wear the crown of the stars! [pause 1.5s]
 
-Our fingernails shattered against that iron portcullis! [pause 1.2s]
-Our blood hardened into rust upon your lock! [pause 2.0s]
+Draw the steel, my chosen! [commanding roar]
+He broke the sacred oath. He stained the order of this world! [pause 1.2s]
 
-You cast us into the teeth of the black mud... [pause 1.0s]
-so that you could draw one more coward's breath! [pause 1.5s]
-
-Did you return to seek forgiveness?! [pause 1.0s]
-THERE IS NO ABSOLUTION HERE! [pause 1.0s]
-BECOME ONE WITH US, CAPTAIN!"
+We are not his cattle. [pause 0.8s]
+SHOW THIS FALSE GOD WHAT A MORTAL CAN DO!"
 ```
 <!-- slide -->
 ```markdown
-[NGƯỜI ĐỘI PHÓ - TIẾNG VIỆT]
-(Hàng chục giọng lính đồng thanh gầm rít căm phẫn)
-"Đội trưởng... Người Đội Trưởng cao quý của chúng tôi...
+[BẢN DỊCH TIẾNG VIỆT]
+(Giọng vang dội uy nghiêm, bùng nổ cơn thịnh nộ thần thánh)
+"Đại nghịch bất đạo!
+Một con sâu bọ dám uống máu anh em để đội lên đầu chiếc vương miện tinh tú!
 
-Mười đầu ngón tay chúng tôi đã gãy nát trên cánh cổng sắt ngàn cân ấy!
-Máu của anh em đã khô cứng thành rỉ sét trên ổ khóa của ngài!
+Rút kiếm ra, kẻ được ta chọn!
+Hắn đã phá vỡ lời thề thiêng liêng. Hắn đã bôi nhọ trật tự của cõi trần này!
 
-Ngài ném chúng tôi vào móng vuốt của bầy quái vật bùn đen...
-Chỉ để ngài được hít thở thêm vài hơi thở hèn hạ của một kẻ đào ngũ!
-
-Ngài quay lại đây để cầu xin sự tha thứ ư?!
-Ở ĐÂY KHÔNG CÓ SỰ XÁ TỘI NÀO ĐÂU!
-HÃY HÒA LÀM MỘT VỚI CHÚNG TÔI ĐI, ĐỘI TRƯỞNG!"
+Chúng ta không phải lũ gia súc của hắn.
+HÃY CHO TÊN THẦN GIẢ TẠO KIA BIẾT NGƯỜI PHÀM CÓ THỂ LÀM ĐƯỢC NHỮNG GÌ!"
 ```
 ````
 
-### 5.2. Lời Trăng Trối Sau Cắt Cảnh Kết Liễu [E]:
-```markdown
-[THE VICE-CAPTAIN - TIẾNG ANH]
-[calm, solemn military cadence]
-"The iron gate... [pause 1.0s] has finally opened. [pause 1.5s]
-Dismiss the squad... [pause 0.8s] Captain."
-
-[BẢN DỊCH TIẾNG VIỆT]
-(Giọng quân nhân nghiêm trang, thanh thản)
-"Cánh cổng sắt... cuối cùng đã mở rồi.
-Giải tán tiểu đội được rồi... Đội trưởng."
-```
-
 ---
 
-## 🌟 PHÂN CẢNH 6: LỜI THÌ THẦM KHI THANH TẨY THÁNH TÍCH (THE PURIFICATION)
-
-*(Mỗi khi người chơi hoàn thành câu đố bí mật và biến Tàn Tích Ô Uế thành Thánh Tích Tinh Khiết tại Bàn Thờ Ẩn, Người Kể Chuyện sẽ cất giọng đọc chậm rãi).*
+## 🌅 PHÂN CẢNH 6: KẾT THÚC CHÂN THỰC — NGƯỜI PHÀM CUỐI CÙNG (TRUE ENDING)
+*(Valerius ngã xuống, quái thai thần vị tan rã thành tro bụi. Thánh điện sụp đổ. Bạn đứng một mình giữa bình minh hoang tàn).*
 
 ````carousel
 ```markdown
-[1. KHI THANH TẨY NƯỚC MẮT KẺ TRẮC ẨN (SIR GERVAISE)]
 [NARRATOR]
-"Blood washes stone. [pause 1.0s]
-The teacher’s tears, once drowned in black despair, turn clear as winter ice. [pause 1.5s]
-You carry not a trophy... [pause 0.8s]
-but the heavy burden of a master's forgiveness."
+[peaceful, melancholic, fading away]
+"The false god is dead. [pause 1.5s]
+The legion is gone. [pause 1.5s]
 
-[2. KHI THANH TẨY BÔNG HỒNG BẰNG THỊT (MẸ AGNES)]
-[NARRATOR]
-"Three candles pierce the dark. [pause 1.0s]
-The black wax melts away, giving birth to a scarlet bloom upon the cold stone cradle. [pause 1.5s]
-A mother’s love, stolen by sacred hypocrisy... [pause 0.8s]
-is granted quiet peace at last."
+No trumpets sound. No flowers fall. [pause 1.2s]
+Only the cold wind blowing across the ash. [pause 2.0s]
 
-[3. KHI THANH TẨY MẢNH KHIÊN HUYNH ĐỆ (ĐỘI PHÓ)]
-[NARRATOR]
-"The lock yields. [pause 1.0s]
-The rusted shield shines once more with the pale bronze of lost brotherhood. [pause 1.5s]
-The gate you shut in panic... [pause 0.8s]
-now stands wide open to the heavens."
-```
-<!-- slide -->
-```markdown
-[BẢN DỊCH TIẾNG VIỆT CẢ 3 THÁNH TÍCH]
-(1. Nước Mắt Sir Gervaise)
-"Máu sám hối gột rửa đá hoa cương.
-Nước mắt người thầy già, từng ngập trong bùn đen tuyệt vọng, nay hóa thành pha lê trong suốt tựa sương mai.
-Thứ ngươi mang theo không phải là một chiến lợi phẩm...
-Mà là gánh nặng ngàn cân của sự tha thứ từ ân sư."
+He hammered the four God-Weapons deep into the broken bedrock... [pause 1.0s]
+Sealing the Primordials under stone and silence. [pause 2.0s]
 
-(2. Bông Hồng Mẹ Agnes)
-"Ba ngọn bạch lạp xua tan bóng tối.
-Khối sáp đen tan rã, nảy mầm thành đóa hồng đỏ thắm giữa chiếc nôi đá lạnh căm.
-Tình mẫu tử từng bị bóp nghẹt bởi sự đạo đức giả của giáo điều...
-Cuối cùng đã được đón nhận sự bình yên."
+Then, he stripped his shattered armor. [pause 1.2s]
+Leaving his broken steel beside the empty throne. [pause 1.5s]
 
-(3. Mảnh Khiên Đội Phó)
-"Ổ khóa sắt đầu hàng.
-Mảnh khiên hoen rỉ rực sáng trở lại ánh đồng thau cổ xưa của tình huynh đệ năm nào.
-Cánh cổng sắt ngươi từng hoảng loạn kéo sập...
-Nay đã mở toang hướng thẳng lên bầu trời tự do."
-```
-````
+A crippled mortal, bleeding onto the dust... [pause 1.0s]
+Walking toward the pale morning sun. [pause 2.0s]
 
----
-
-## 🌅 PHÂN CẢNH 7: LỜI KẾT TRUE ENDING (BÌNH MINH TRO TÀN)
-
-*(Sau khi Thực Thể Ngàn Tội tan biến. Nhạc giao hưởng sầu bi (Cello & Choir u hoài). Hiệp sĩ quỳ gối gục đầu, giáp gai vỡ vụn rụng leng keng. Đứa trẻ đặt bông hoa dại vào tay anh).*
-
-````carousel
-```markdown
-[NARRATOR - TIẾNG ANH (ĐOẠN KẾT BITTERSWEET GRIMDARK)]
-[deep, sorrowful, yet profound cadence]
-"The sun rises upon Sancta Aurelia... [pause 1.5s]
-Not with the sweet embrace of a fairy tale... [pause 1.0s]
-but with the cold, unyielding glare of reality. [pause 2.5s]
-
-It illuminates shattered cathedrals. [pause 1.0s]
-Piles of bleached bones. [pause 1.0s]
-And an empire reduced to drifting ash. [pause 2.0s]
-
-From the dark burrows, a handful of survivors emerge. [pause 1.2s]
-Haggard. Broken. Starving. [pause 1.5s]
-There are no prayers left on their lips. [pause 1.0s]
-No false gods to blame, and no miracles to beg for. [pause 2.0s]
-
-Salvation was never paradise. [pause 1.5s]
-Salvation... was returning to them the right to be human. [pause 2.0s]
-To stand on barefoot, bleeding soles... [pause 1.0s]
-and rebuild upon the ruins with their own trembling hands. [pause 2.5s]
-
-And the Penitent One? [pause 1.5s]
-The thorns have fallen. [whisper] The debt is paid. [pause 2.0s]
-He rests now in silent communion with the stone... [pause 1.5s]
-A solitary guardian of the Ashen Dawn."
+No gods remain to rule us. [pause 1.5s]
+For the first time... [pause 1.0s]
+The world belongs to mankind."
 ```
 <!-- slide -->
 ```markdown
 [BẢN DỊCH TIẾNG VIỆT]
-(Giọng trầm, u hoài, lắng đọng sâu sắc)
-"Bình minh rọi chiếu xuống Sancta Aurelia...
-Không phải với vòng tay ngọt ngào của một câu chuyện cổ tích...
-Mà bằng ánh nhìn lạnh lẽo, tàn nhẫn của thực tế trần trụi.
+(Bình yên, trầm buồn, thanh thản dần tan biến)
+"Tân Thần giả tạo đã chết.
+Quân đoàn cũng không còn nữa.
 
-Ánh mặt trời soi tỏ những đại giáo đường đổ nát.
-Những đống xương trắng phơi sương.
-Và cả một đế chế thần quyền nay chỉ còn là tro tàn bay trong gió sớm.
+Không có tiếng kèn chiến thắng. Không có những đóa hoa rơi.
+Chỉ có cơn gió lạnh buốt thổi qua lớp tro tàn.
 
-Từ các hầm ngục tăm tối, một nhúm người sống sót bước ra.
-Tiều tụy. Kiệt quệ. Đói khát.
-Không còn bất kỳ lời cầu nguyện nào vương trên môi họ.
-Không còn vị thần giả tạo nào để họ đổ lỗi, và cũng chẳng còn phép màu nào để họ ngửa tay van xin.
+Chàng cắm sâu bốn Thần Khí vào lòng đá nứt nẻ...
+Niêm phong các Cổ Thần dưới lớp đá tảng và sự câm lặng ngàn thu.
 
-Sự cứu rỗi chưa bao giờ là thiên đường.
-Sự cứu rỗi... là trả lại cho con người quyền được làm Người.
-Được tự đứng trên đôi chân trần rướm máu...
-Và dùng chính đôi bàn tay run rẩy của mình để dựng lại cuộc đời từ đống đổ nát.
+Rồi, chàng cởi bỏ mảnh giáp sắt vỡ vụn.
+Để lại thanh kiếm sắt sứt mẻ bên cạnh ngai vàng trống không.
 
-Còn người Hiệp Sĩ Khổ Hạnh ư?
-Gai nhọn đã rơi rụng. Món nợ máu đã trả xong.
-Anh yên nghỉ trong sự câm lặng vĩnh hằng giữa quảng trường đá lạnh...
-Một người gác cổng cô độc của Bình Minh Tro Tàn."
+Một người phàm tàn tật, rướm máu trên cát bụi...
+Bước đi về phía vầng thái dương nhạt nhòa của sớm mai.
+
+Không còn thần thánh nào ngự trị chúng ta nữa.
+Lần đầu tiên...
+Thế giới này thực sự thuộc về loài người."
 ```
 ````

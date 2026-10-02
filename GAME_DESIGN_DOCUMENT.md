@@ -1,158 +1,167 @@
 # TÀI LIỆU THIẾT KẾ GAME TOÀN DIỆN (COMPREHENSIVE GAME DESIGN DOCUMENT)
-**Tên dự án (Working Title):** *The Penitent: Blood & Sin* (Hiệp Sĩ Khổ Hạnh)  
-**Thể loại:** Dark Fantasy Turn-based RPG (Chiến thuật theo lượt tàn khốc, Sinh tồn - Rủi ro cao, Phần thưởng lớn)  
-**Phong cách hình ảnh:** 2D Góc Nhìn Ngang (Side-scrolling - Kiểu *Darkest Dungeon*, *Blasphemous*)  
-**Nguồn cảm hứng:** *Berserk*, *Blasphemous*, *Fear & Hunger*, *Dark Souls*.
+**Tên dự án:** *GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)*  
+**Thể loại:** 2D Fast-paced Dark Fantasy Action Platformer (Chặt chém tốc độ cao, Đối kháng phản xạ)  
+**Phong cách hình ảnh:** 2D Side-scrolling Gothic Dark Fantasy (*Darkest Dungeon*, *Berserk*, *Dead Cells*, *Nine Sols*, *Sekiro*)  
+**Trọng tâm trải nghiệm (Core Fantasy):** Cảm giác bay nhảy tự do ("phiêu"), chặt chém đanh thép ("đã tay"), né đòn bất tử (I-frames Dash), phản đòn nảy lửa (Parry "KENG!"), và tự do luân chuyển 4 phong cách chiến đấu của Tứ Đại Thần Khí.  
+**Cơ chế Boss đặc quyền:** **MỖI BOSS 2 PHASE: Thống Soái Cánh Quân (Đấu võ nghệ 1v1 tốc độ cao) $\rightarrow$ Cổ Thần Bung Xích (Chiến quái thú vũ trụ) $\rightarrow$ Thu phục Cổ Thần vào kho vũ khí của người chơi!**  
+**Trùm Cuối Tối Thượng:** **ĐOÀN TRƯỞNG VALERIUS & THẦN THỂ DUNG HỢP (The Ascended Usurper).**
 
 ---
 
-## 1. BỐI CẢNH THẾ GIỚI (WORLD LORE)
+## 1. BỐI CẢNH THẾ GIỚI & CỐT TRUYỆN (WORLD LORE)
 
-### 1.1. Thánh Đô Cẩm Thạch: Sancta Aurelia
-- Từng là đỉnh cao của tôn giáo và quyền lực trung cổ, được xây dựng bằng cẩm thạch trắng, mái vòm dát vàng và tháp chuông ngân vang. Người dân tôn thờ **Chân Giáo Tinh Khiết (The Pure Faith)**, bài trừ mọi lỗi lầm trần thế.
-- **Thực tại suy tàn:** Đá cẩm thạch bị nhuộm đen bởi bồ hóng và máu khô. Chuông bạc nứt toác rên rỉ, tượng thiên thần nhỏ lệ nhựa đen, tro xám rơi lả tả phủ kín các bãi tha ma.
+### 1.1. Cuộc Nội Chiến Tứ Quân & Tứ Đại Thần Khí
+- **Tứ Đại Cổ Thần:** Bốn thực thể nguyên thủy trôi nổi ngoài vũ trụ hoặc ngủ sâu trong lòng đất, bị Giáo triều cổ đại xé thịt phong ấn vào 4 bảo khí định quốc: **Kiếm Đơn** (Trật Tự), **Cặp Vuốt Sắt** (Bóng Tối), **Lưỡi Liềm** (Tham Ăn), và **Đại Kiếm** (Cuồng Nộ).
+- **Đại Loạn Tứ Quân:** Đế quốc sụp đổ, 4 quân đoàn lớn tranh đoạt thần quyền:
+  1. **Quân Đoàn Ánh Sáng Trật Tự** (Phe ta - Do Đoàn trưởng Valerius thống lĩnh).
+  2. **Quân Đoàn Ám Ảnh Sát Thủ** (Chiếm giữ pháo đài bóng đêm, dùng Vuốt Bóng Tối ám sát tướng lĩnh).
+  3. **Giáo Hội Phàm Thực / Tham Ăn** (Chiếm giữ đầm lầy hầm mộ, dùng Liềm thu hoạch sinh mệnh nuôi cơn đói).
+  4. **Quân Thiết Bọc Cuồng Chiến** (Cố thủ trong thành trì đá đen, dùng Đại Kiếm Cuồng Nộ và cơ bắp nghiền nát kẻ thù).
+- **Kẻ Được Chọn Của Thần Trật Tự:** Bạn là Đội Trưởng Tiên Phong của Quân Đoàn Trật Tự — người phàm duy nhất được Cổ Thần Trật Tự Aethelgard trong Kiếm Đơn công nhận. Bạn nhận lệnh của Đoàn trưởng Valerius mang kiếm dẹp loạn 3 cánh quân phản nghịch để thống nhất giang sơn.
 
-### 1.2. Thảm Họa Khởi Nguồn: "Đại Lễ Tẩy Trần" & Đấng Tội Thần
-- **Nghi lễ sai lầm:** Giáo Hoàng **Innocentius V** bí mật cử hành nghi lễ cấm *"Lễ Tẩy Trần Vĩnh Hằng"* dưới đáy Thánh Điện nhằm xóa bỏ tội lỗi nhân loại để nghênh đón Thần Linh.
-- **Thực thể giáng thế:** Thứ bước ra từ vết nứt hư không là **"Kẻ Mang Ngàn Tội" (The Primeval Sin / Abyssal Paragon)**.
-- **Bản chất Dịch Bệnh (The Scourge of Guilt):**
-  - Biến mọi tội lỗi giấu kín trong tâm trí con người thành hiện thực vật lý tàn bạo:
-    - Kẻ tham lam: Thịt biến thành vàng nóng chảy nung chín nội tạng.
-    - Kẻ bạo lực: Xương thịt mọc ra gai nhọn, tự xé rách da dẻ.
-    - Kẻ đạo đức giả: Mặt biến thành mặt nạ đá vỡ khóc ra mủ đen.
-
-### 1.3. Ba Phe Phái Còn Sót Lại Trong Đống Đổ Nát
-1. **Giáo Triều Biến Tính (The Blighted Synod):** Những giám mục, linh mục, nữ tu cuồng tín bị biến dạng nhưng tin rằng lở loét và gai nhọn là *"Ân Sủng Thánh Hóa"*. Tiếp tục tổ chức các buổi "Thánh Lễ Máu" để cưỡng ép rửa tội người sống sót.
-2. **Hội Hiệp Sĩ Rỉ Sét (The Rustbound Order):** Đội quân cấm vệ từng cố thủ trong các pháo đài. Giáp sắt nung chảy và hàn dính vĩnh viễn vào xương tủy họ, biến họ thành những "cỗ máy thịt và thép" rỗng tuếch tuần tra trong vô thức.
-3. **Những Kẻ Đau Khổ (The Afflicted / Penitent Remnants):** Thường dân, thợ thủ công lẩn trốn dưới hầm ngục. Họ **tự hành xác (Self-Mortification)** mỗi ngày (quất roi, tự đâm mù mắt) để nỗi đau thể xác xua tan tội lỗi, ngăn dịch bệnh biến tính mình.
+### 1.2. Bi Kịch Cứu Thế Cực Đoan Của Đoàn Trưởng Valerius
+- **Mảnh Di Vật Tiên Tri & Nỗi Sợ Tận Thế:** Valerius từng là vị tướng kiệt xuất, yêu thương anh em như ruột thịt. Hắn nhặt được Mảnh Di Vật Tiên Tri và nhìn thấy trước cảnh **The Oldest God (Đấng Thủy Tổ Cổ Xưa Nhất)** thức tỉnh nghiền nát nhân loại.
+- **Sự Cự Tuyệt Của Thần Trật Tự & Vỡ Mộng:** Ban đầu hắn muốn hợp nhất 4 Thần Khí để mượn sức mạnh thần thánh cứu thế. Nhưng khi bị thanh Kiếm Trật Tự từ chối (và chọn bạn), hắn cay đắng nhận ra: *Cổ Thần hoàn toàn vô cảm, không bao giờ cứu loài người!*
+- **Quyết Định Hiến Tế Bi Kịch (The Eclipse):** Trước đồng hồ đếm ngược của ngày tận thế, Valerius tự thuyết phục bản thân bằng một logic toán học tàn nhẫn: *"10 vạn anh em đằng nào cũng chết trong miệng Đấng Thủy Tổ. Thà dùng sinh mệnh của họ làm ngọn lửa tế đàn để ta HÓA THÀNH TÂN THẦN, chém chết Đấng Thủy Tổ cứu lấy hàng triệu sinh linh còn lại!"*
+- **Sứ Mệnh Ngăn Chặn Của Người Phàm:** Tại Ngai Vàng, bạn rút kiếm đối đầu với kẻ từng là người anh cả kính yêu — khẳng định phẩm giá và ý chí của người phàm không bao giờ thỏa hiệp với sự phản bội đồng đội!
 
 ---
 
-## 2. HỆ THỐNG CHIẾN ĐẤU CỐT LÕI: ĐỐI XỨNG TỘI LỖI (THE DUALITY OF SIN)
+## 2. HỆ THỐNG CHIẾN ĐẤU CỐT LÕI (CORE COMBAT SYSTEM)
 
-Cả hai phe (Người chơi và Kẻ địch) đều vận hành xoay quanh hai cực: **MÁU (SINH MỆNH VẬT LÝ)** và **TỘI LỖI (SỨC NẶNG LINH HỒN)**:
+Tam giác chiến đấu vận hành xoay quanh: **CƠ ĐỘNG TỐC ĐỘ CAO — PHẢN ĐÒN NẢY LỬA — GIẢI PHÓNG KHÁT MÁU**:
 
 ```
-[ PHE TA: HIỆP SĨ KHỔ HẠNH ]                [ PHE ĐỊCH: QUÁI VẬT DỊ GIÁO ]
-        Dung Tích Sinh Mệnh                            Thanh Sinh Mệnh
-┌──────────────────────────────┐              ┌──────────────────────────────┐
-│  MÁU (BLOOD) │ GUILT (TỘI)   │              │          MÁU (HP)            │
-└──────────────────────────────┘              └──────────────────────────────┘
- ◄── Ăn đòn        Sám Hối ──►                 ◄── Đòn đánh chém mất máu ──►
-     Tội dâng      Đổi Tội->Máu               
-                                              ┌──────────────────────────────┐
-                                              │   THANH NGHIỆP TỘI (SIN)     │
-                                              └──────────────────────────────┘
-                                               ◄── Hiệp sĩ nhồi Nghiệp Tội ──►
-                                                   Đầy 100% -> CHOÁNG (STUN)
-                                                   -> Kích hoạt [ TRỪNG PHẠT ]
+                  [ NÉ BẤT TỬ / DI CHUYỂN ]
+                    (Dash I-frames, Double Jump)
+                                ▲
+                               ╱ ╲
+                              ╱   ╲
+                             ▼     ▼
+      [ TẤN CÔNG LIÊN HOÀN ] ◄─────► [ PARRY NẢY LỬA ]
+      (Combo nạp Khát Máu)          (Bẻ đòn 'KENG!', Hit-stop 0.08s)
+             │
+             ▼
+      [ CAST ĐÒN ĐẶC BIỆT CỔ THẦN [E] ]
+      (Tiêu hao Khát Máu, Hủy diệt diện rộng, Rung màn hình)
 ```
 
-# 2. HỆ THỐNG CHIẾN ĐẤU CỐT LÕI (2D ACTION PLATFORMER)
+### 2.1. Bộ Kỹ Năng Vận Động (Mobility Toolkit)
+1. **Chạy & Đổi Hướng Tức Thì (Instant Pivot):** Tốc độ chạy cao (`SPEED = 280.0`), xoay chuyển hướng không trễ.
+2. **Nhảy Đúp (Double Jump - `MAX_JUMP = 2`):** Nhảy bổng linh hoạt, cú nhảy thứ 2 tạo vệt gió mờ giúp vượt bẫy và không chiến với các đòn quét sàn.
+3. **Lướt Bất Tử (I-Frames Dash):** 
+   - Tốc độ lướt cao (`DASH_SPEED = 650.0`), thời lượng `0.2s`.
+   - Trong suốt thời gian lướt, nhân vật hoàn toàn miễn nhiễm sát thương và có thể lướt xuyên thân quái.
+   - **Attack-Cancel:** Hủy động tác chém thường sang Dash bất kỳ lúc nào để phản xạ sinh tử.
 
-### 2.1. Phe Ta: Bình Thông Nhau "Blood & Guilt"
-1. **Khởi đầu:** `Máu (Blood)` = 100%, `Tội Lỗi (Guilt)` = 0.
-2. **Nỗi Đau Biến Thành Sức Mạnh (Cuồng Tội):** 
-   - Bị quái đánh hoặc chủ động bấm phím [K] tự rạch máu $\rightarrow$ Máu mất đi biến thành **Điểm Guilt**.
-   - Guilt càng cao $\rightarrow$ Sát thương kiếm tăng vọt (+20% đến +120%), đòn đánh phát sáng rực lửa.
-3. **Hành Động: SÁM HỐI / CHUỘC TỘI (Atonement - Giữ phím [L] để Quỳ Vận Niệm):**
-   - **Không hồi máu tức thì!** Người chơi phải **nhấn và GIỮ phím [L]** trong 1.0 - 1.2 giây.
-   - **Hình tượng:** Hiệp Sĩ cắm thanh cự kiếm xuống sàn đá, quỳ một chân chắp tay cầu nguyện (khóa di chuyển).
-   - **Khung cửa rủi ro (Risk Window):** 
-     - Người chơi có thể chủ động thả tay ra sớm để hủy niệm nếu thấy quái sắp lao vào.
-     - **Nếu bị địch đánh trúng khi đang quỳ $\rightarrow$ Bị NGẮT NIỆM (Interrupted)!** Ăn trọn sát thương và không được hồi giọt máu nào!
-     - Nếu giữ trọn vẹn 1.2s an toàn $\rightarrow$ Toàn bộ Guilt được thanh tẩy chuyển hóa thành Máu tươi!
+### 2.2. Cơ Chế Phản Đòn Nảy Lửa (The Parry System)
+- **Kích hoạt:** Bấm nút Parry (Chuột Phải / Phím chỉ định), nhân vật giơ vũ khí thủ thế trong khung thời gian `0.18 giây`.
+- **Khi đỡ trúng đòn tấn công của địch:**
+  - **Miễn nhiễm 100% sát thương**.
+  - **Hit-stop (Khựng hình 0.08s):** Dừng khung hình tạo cảm giác va chạm sắt thép đanh thép.
+  - **Âm thanh & Hiệu ứng:** Tiếng **"KENGGG!"** giòn tan, tia lửa cam vàng tóe sáng.
+  - **Bẻ đòn (Poise Broken):** Kẻ địch văng lùi, rơi vào trạng thái choáng váng sơ hở (Stagger).
+  - **Thưởng nóng:** Người chơi được nạp ngay `+35% Khát Máu` và có thể bấm Tấn công ngay lập tức để tung đòn **Phản Kích Sấm Sét (Riposte)** lướt chém xuyên qua quái.
 
-### 2.2. Phe Địch: Thanh Nghiệp Tội & Đòn Trừng Phạt (Sin & Verdict)
-1. **Thanh Nghiệp Tội (Sin Burden - 0 đến 100):**
-   - Đòn chém 1 (+15 Sin), đòn chém 2 (+20 Sin), đòn chém 3 nện đất (+35 Sin).
-2. **Trạng Thái Choáng Khi Đầy Sin (Stagger):**
-   - Khi chạm mốc **100 Sin**: Quái vật bị **CHOÁNG VÁNG (Stagger)** trong **2.5 giây** đầu tiên (lảo đảo, không thể di chuyển hay tấn công).
-   - Trên đầu hiện biểu tượng nhấp nháy: `⚡ [E] TRỪNG PHẠT!`.
-3. **Cơ Chế Khóa Tội (Sin Lock) & Dứt Điểm Tự Do:**
-   - Sau khi hết 2.5s choáng, quái vật tỉnh dậy và tiếp tục truy đuổi tấn công, **NHƯNG thanh Sin vẫn bị khóa cứng ở 100/100** và biểu tượng `[E]` vẫn chờ sẵn.
-   - Người chơi có thể chọn thời điểm thích hợp nhất áp sát và bấm **[E]**:
-     - Hiệp Sĩ lướt vút tới trước, thời gian ngưng đọng (Hit-stop slow motion 0.15s), chém vệt chữ X đỏ huyết xé toạc màn hình.
-     - Gây sát thương chí mạng cực lớn (140 - 300 dmg), reset Sin về 0 và thưởng nóng cho Hiệp Sĩ +25 Guilt!
+### 2.3. Cơ Chế "Độ Khát Máu" (Bloodlust Gauge: 0 $\rightarrow$ 100%)
+- Chém thường trúng đích: `+15%` mỗi nhát.
+- Lướt chém (Dash Attack): `+25%`.
+- Phản đòn (Parry Riposte): `+35%`.
+- Khi đầy 100%: Vũ khí rực sáng thần uy $\rightarrow$ Bấm **[E]** kích hoạt tuyệt kỹ tối thượng của Cổ Thần đang cầm.
 
 ---
 
-## 3. CẤU TRÚC KỊCH BẢN: ĐÍCH ĐẾN CHUNG & 4 KẾT CỤC RIÊNG
+## 3. HỆ THỐNG TỨ ĐẠI THẦN KHÍ (MULTI-WEAPON ARSENAL)
 
-### 3.1. Đích Đến Tối Cao Chung (The Grand Convergence)
-- Mọi nhân vật đều bị thôi thúc tiến về **Thánh Điện Tối Cao (The Grand Sanctum / Abyssal Cradle)** ở trung tâm vương quốc để đối mặt với **Giáo Hoàng Innocentius V** và **Thực Thể Kẻ Mang Ngàn Tội**.
+Mỗi Cổ Thần là một món vũ khí riêng biệt với cơ chế gameplay độc nhất:
 
-### 3.2. Dàn 4 Nhân Vật Khởi Đầu (Sinners Roster)
-1. 🗡️ **The Penitent Knight (Hiệp Sĩ Khổ Hạnh) – [Đại Kiếm]**
-   - *Tội lỗi:* Sự Hèn Nhát & Phản Bội (Từng bỏ rơi huynh đệ trong Hội Hiệp Sĩ Rỉ Sét).
-   - *Động lực:* Tìm sự xá tội và tự tay giải thoát cho anh em cũ.
-   - *Kết cục riêng (The Absolution):* Chém đầu Giáo Hoàng, lần đầu cởi bỏ chiếc mũ sắt vô diện dưới ánh bình minh và ngã xuống thanh thản giữa đống gai nhọn rụng rời.
-2. 📿 **The Chained Nun (Nữ Tu Mù Gông Xiềng) – [Roi Gai & Thánh Tích Máu]**
-   - *Tội lỗi:* Sự Cuồng Tín Mù Quáng (Từng giao nộp chính gia đình lên giàn thiêu).
-   - *Động lực:* Tìm lại đức tin, chất vấn sự giả tạo của Giáo Hoàng.
-   - *Kết cục riêng (The False Saint):* Nhận ra Thần linh không tồn tại, tự mình hấp thụ tàn tích thực thể để trở thành "Thánh Mẫu Dị Giáo Mới".
-3. 🪓 **The Condemned Headsman (Đao Phủ Bị Đày Ải) – [Đại Rìu / Chùy Gai]**
-   - *Tội lỗi:* Sự Tàn Bạo & Khát Máu (Nghiện sát sinh, bị Giáo triều vứt bỏ xuống hầm ngục).
-   - *Động lực:* Báo thù Giáo triều.
-   - *Kết cục riêng (The Eternal Slaughter):* Chặt nát đầu Giáo Hoàng, đầu hàng hoàn toàn trước bản tính thú dữ, trở thành quái vật đao phủ mới canh giữ tàn tích.
-4. 🧪 **The Heretic Apothecary (Thầy Thuốc Dị Giáo) – [Dao Mổ & Độc Dược]**
-   - *Tội lỗi:* Lòng Kiêu Ngạo Của Kẻ Tìm Kiếm Tri Thức (Thử nghiệm vô nhân đạo trên người sống).
-   - *Động lực:* Giải phẫu thực thể để tìm thuốc kiểm soát dịch bệnh.
-   - *Kết cục riêng (The Flesh Transmutation):* Chiết xuất thành công huyết thanh bất tử từ tim thực thể, nhưng biến dị thành sinh vật nửa người nửa quái vật sống cô độc vĩnh viễn.
+| Thần Khí | Cổ Thần Ngự Trị | Đặc trưng lối chơi | Cơ chế độc quyền (Passive & Normal Attack) | Đòn Đặc Biệt [E] (Khi đầy Khát Máu) |
+| :--- | :--- | :--- | :--- | :--- |
+| 🗡️ **Kiếm Đơn** *(Khởi đầu)* | **Aethelgard** *(Trật Tự)* | Điềm tĩnh, sải đòn chuẩn mực, nhịp điệu hoàn hảo, thưởng cực lớn cho phản xạ. | **Parry Master ("KENG!"):** Khung đỡ đòn chuẩn xác, bẻ gãy đòn quái và hồi máu nhẹ khi Riposte. Bạn là người duy nhất được thần công nhận. | **Nhất Kiếm Tịch Diệt:** Ngưng đọng thời gian 0.5s, chém rạch đôi không gian trước mặt. |
+| 🩸 **Cặp Vuốt Sắt** *(Đoạt tại Ải 1)* | **Umbrath** *(Bóng Tối)* | Tốc độ chém xé bão táp, sát thủ áp sát, dồn ép mục tiêu, biến ảo. | **Hắc Huyết Xâm Thực (Withering Black Health):** Đòn cào chuyển hóa máu địch sang **Màu Đen** theo từng đoạn. Khi kích nổ (đòn kết thúc combo hoặc đòn [E]), địch lập tức mất toàn bộ lượng máu đen đó! | **Hắc Ảnh Loạn Vũ (Shadow Dance):** Biến thành bóng đen lướt chém ziczac 6 nhát liên tiếp toàn màn hình (hoàn toàn bất tử trong lúc chém), nhát cuối chém xuyên tâm kích nổ toàn bộ lượng máu đen! |
+| ⛓️ **Lưỡi Liềm** *(Đoạt tại Ải 2)* | **Vorax** *(Tham Ăn / Phàm Thực)* | Quét 360 độ diện rộng, không chiến (Air Combat), khống chế và kéo cự ly quái. | **Reaper Feast:** Quét liềm kéo giật bầy quái về gần mình để "ăn thịt". Tốc độ nạp Khát Máu nhanh gấp đôi các vũ khí khác. | **Bạo Thực Yến Tiệc (Devouring Vortex):** Tạo miệng xoáy hư không háu đói hút toàn bộ quái xung quanh vào tâm, nghiền nát và nuốt trọn sinh lực (hồi máu cho người chơi). |
+| 🛡️ **Đại Kiếm** *(Đoạt tại Ải 3)* | **Vargon** *(Cuồng Nộ & Sức Nặng)* | Nặng nề, uy lực chấn động, siêu giáp (Hyper-armor), đập vỡ khiên giáp, sức mạnh cơ bắp. | **Hyper-Armor Slash:** Đòn chém không thể bị ngắt bởi đòn đánh thường của quái, đập vỡ thế thủ (Guard Break) của kẻ mang khiên. | **Cuồng Thần Thức Tỉnh (Berserk Fury):** Nhân vật gầm thét phát điên, mắt đỏ rực. Trong 8 giây: Miễn nhiễm hoàn toàn choáng/ngắt chiêu, tăng 60% sát thương, mỗi nhát chém phóng ra sóng xung kích! |
 
 ---
 
-## 4. CẤU TRÚC MÀN CHƠI: BÁN PHI TUYẾN TÍNH (THE HUB & SPOKE)
+## 4. CHI TIẾT CƠ CHẾ "HẮC HUYẾT XÂM THỰC" (WITHERING BLACK HEALTH)
 
 ```
-                  [ TẦNG 1: HẦM MỘ GÔNG XIỀNG ]
-                   (Tuyến tính - Dạy luật chơi)
-                                 │
-                                 ▼
-                     [ ĐỀN THỜ HOANG PHẾ (HUB) ]
-                   (Nơi nghỉ chân, nâng cấp đồ)
-                                 │
-         ┌───────────────────────┼───────────────────────┐
-         ▼                       ▼                       ▼
-  [ NHÁNH A: KHU PHỐ ]   [ NHÁNH B: TU VIỆN ]   [ NHÁNH C: ĐẦM LẦY ]
-  - Gặp Hiệp Sĩ Rỉ Sét   - Gặp Giáo Triều        - Gặp Quái Dị Giáo
-  - Nhặt Chùy & Khiên    - Nhặt Roi Gai          - Nhặt Dao Mổ
-  - Cứu Đao Phủ          - Cứu Nữ Tu             - Cứu Thầy Thuốc
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                                 ▼
-                 [ TẦNG CUỐI: ĐẠI THÁNH ĐIỆN ]
-               (Mở khóa khi hạ đủ 3 Boss nhánh)
+[================ Thanh Máu Của Kẻ Địch / Boss ================]
+[   Máu Đỏ Hiện Tại   |   MÁU ĐEN BỊ XÂM THỰC   |   Đã Mất   ]
+                      ▲                         ▲
+                   Điểm cắt                   Điểm nổ
 ```
 
-### 4.1. Con Boss Đầu Tiên: Kẻ Cai Ngục Khóc Máu (Sir Gervaise)
-- **Ngoại hình:** Khổng lồ 3m, cõng lồng sắt chứa đầy đầu lâu người chết đói, mặt nạ sắt chảy máu ròng ròng từ hốc mắt. Tay cầm chùm chìa khóa gai nhọn và thanh thiết bổng đóng đinh.
-- **Vai trò:** Dạy người chơi cảm giác sinh tử của cơ chế: Ăn đòn nặng tích Guilt $\rightarrow$ Phản đòn nhồi Sin $\rightarrow$ Stun Boss để Phán Xét $\rightarrow$ Sám Hối hồi đầy máu.
+1. **Chuyển hóa Máu Đen:**
+   - Khi đánh bằng Cặp Vuốt, mỗi nhát cào gây 20% sát thương trực tiếp, nhưng **chuyển hóa 80% sát thương còn lại thành Máu Đen** trên thanh máu của kẻ địch.
+   - Vùng máu đen thể hiện lượng sát thương tiềm tàng tích lũy bên trong mục tiêu.
+2. **Kích Nổ (Detonation):**
+   - Đòn đánh thứ 4 của chuỗi combo thường hoặc đòn Dash-Attack sẽ kích nổ đoạn máu đen hiện có.
+   - Khi kích hoạt kỹ năng **[E] Hắc Ảnh Loạn Vũ**: 5 nhát chém ziczac đầu bồi thêm một lượng lớn máu đen, và nhát thứ 6 giáng xuống sẽ **kích nổ 100% lượng máu đen**, thổi bay lập tức thanh máu của địch kèm hiệu ứng vỡ vụn hắc ám!
+3. **Cơ chế Hoàn nguyên (Decay Window):**
+   - Nếu người chơi không tấn công hoặc bị ngắt nhịp quá 3.5 giây, lượng máu đen sẽ rỉ hồi phục dần về máu đỏ bình thường với tốc độ 15%/giây.
 
 ---
 
-## 5. THIẾT KẾ TRỰC QUAN & VẬN HÀNH (VISUAL & GAMEPLAY PACING)
+## 5. HỆ THỐNG BOSS 2 PHASE & VÒNG LẶP CHIẾN DỊCH
 
-### 5.1. Phong Cách 2D Góc Nhìn Ngang (Side-scrolling)
-- **Hành lang khám phá:** Nhân vật bước đi ngang qua các hành lang Gothic u tối (bước chân nặng nề, kéo lê cự kiếm trên sàn đá). Đến cửa bấm tương tác để sang phòng mới.
-- **Tiết kiệm Asset:** Nhân vật di chuyển ngoài bản đồ và nhân vật khi vào trận giao chiến **dùng chung 1 góc nhìn ngang**, tối ưu 50% chi phí vẽ sprite.
+```mermaid
+flowchart TD
+    subgraph BOSS_CYCLE["VÒNG LẶP BOSS 2 PHASE ĐỘC BẢN"]
+        P1["PHASE 1: TƯỚNG LĨNH CÁNH QUÂN (THE WARLORD)\n- Đấu võ nghệ 1v1 tốc độ cao giữa 2 danh tướng\n- Thử thách phản xạ: Parry 'KENG!', Lướt né I-frames\n- Khi cạn máu: Tướng địch gục ngã, XÍCH THẦN KHÍ VỠ NÁT!"] 
+        --> P2["PHASE 2: CỔ THẦN BUNG XÍCH (THE UNBOUND GOD)\n- Cổ Thần phá xác vũ khí, hiện nguyên hình quái thú khổng lồ\n- Thử thách quy mô vũ trụ: Né đòn quét diện rộng, không chiến\n- Khi cạn máu: Hiệp Sĩ cắm kiếm, dùng xích sắt THU PHỤC CỔ THẦN!"]
+        P2 --> REWARD["CHIẾN LỢI PHẨM:\nThu hồi Cổ Thần vào kho vũ khí của bạn!\nMở khóa ngay phong cách chiến đấu mới cho màn sau!"]
+    end
+```
 
-### 5.2. Nhịp Độ Chơi: Vượt Ải Sinh Tồn (Không Cày Level Ảo)
-- Quái vật hiện rõ trên đường đi (không có random encounter). Người chơi có thể chọn giao chiến hoặc tìm đường né tránh nếu kiệt sức.
-- Tiêu diệt quái rơi ra **Máu Tội Lỗi (Sin Remnants)** để dùng tại Bàn Thờ Khổ Hạnh:
-  - Mở khóa chiêu thức mới trên Cây Vũ Khí.
-  - Mở thêm ô gắn Chuỗi Tràng Hạt (Rosary Slots).
-  - Nâng cấp bình máu/thánh tích.
+### Chi tiết Dàn Boss 4 Chương:
+
+1. **Ải 1: Pháo Đài Ngầm Của Quân Sát Thủ (The Umbral Catacombs)**
+   - **Phase 1 — Sát Thủ Vô Ảnh Corina:** Tốc độ âm thanh, tàng hình biến ảo, lướt chém ziczac sau lưng người chơi.
+   - **Phase 2 — Umbrath Bung Xích (Cổ Thần Bóng Tối):** Đấu trường chìm vào bóng đêm tuyệt đối, Umbrath hiện thân thành thực thể bóng tối nghìn mắt phóng phi đao hắc ám từ hư không.
+   - **Phần thưởng:** Thu phục **Cặp Vuốt Sắt Umbrath** (mở khóa Hắc Huyết Xâm Thực & Hắc Ảnh Loạn Vũ chém 6 nhát bất tử).
+
+2. **Ải 2: Đầm Lầy Tu Viện Phàm Thực (The Mire of Devouring Bones)**
+   - **Phase 1 — Nữ Trưởng Tu Morwenna:** Múa liềm xích 360 độ, tạo đầm lầy hút chân và triệu hồi bầy quái háu đói.
+   - **Phase 2 — Vorax Bung Xích (Cổ Thần Tham Ăn):** Hóa thành quái thú hàm ngoạm khổng lồ háu đói nuốt trọn không gian, tạo các hố đen hút sinh lực.
+   - **Phần thưởng:** Thu phục **Lưỡi Liềm Vorax** (mở khóa Reaper Feast & Bạo Thực Yến Tiệc).
+
+3. **Ải 3: Thành Trì Thiết Bọc Cuồng Chiến (The Iron Berserk Bastion)**
+   - **Phase 1 — Thống Chế Thiết Hạm Roderick:** Mang đại trọng giáp và đại khiên, vung đại kiếm bổ nứt sàn đá, đòi hỏi lướt né ra sau gáy phá thế.
+   - **Phase 2 — Vargon Bung Xích (Cổ Thần Cuồng Nộ):** Khổng lồ nham thạch cuồng nộ gầm thét, dậm chân tạo sóng xung kích và mưa đá rơi tự do.
+   - **Phần thưởng:** Thu phục **Đại Kiếm Vargon** (mở khóa Hyper-Armor & Cuồng Thần Thức Tỉnh [E] phát điên tăng DMG).
+
+4. **Ải 4: Kinh Đô Hoàng Kim & Ngai Vàng Phản Bội — FINAL CLIMAX**
+   - **Sự kiện The Eclipse:** Đoàn trưởng Valerius kích hoạt cấm trận hiến tế toàn quân đoàn để Hóa Thần.
+   - **Phase 1 — Valerius Kẻ Cướp Ngai:** Đấu kiếm hoàng kim tốc độ âm thanh, Valerius có khả năng parry ngược lại đòn đánh của người chơi.
+   - **Phase 2 — Quái Thai Thần Vị (The Ascended Abomination):** Valerius bị quyền năng của 4 Cổ Thần làm biến dạng thành một thực thể quái thai thần quyền vũ trụ khổng lồ. Người chơi phải luân chuyển cả 4 vũ khí để ngăn chặn và hủy diệt hắn!
 
 ---
 
-## 6. PROMPTS CONCEPT ART (DÀNH CHO HỌA SĨ / AI GENERATION)
+## 6. THIẾT KẾ KỸ THUẬT & KIẾN TRÚC MÃ NGUỒN (TECHNICAL ARCHITECTURE)
 
-### 6.1. Nhân Vật Chính (The Penitent Knight)
-> `Dark fantasy concept art, full body, a solemn penitent knight standing in heavy rusted black iron armor, the interior of the armor is lined with cruel iron thorns digging into flesh, dried blood dripping from joints, a completely featureless blind iron helmet with no eye slits, wrapped with rusted barbed wire and thorn rosary beads, wielding a massive colossal chipped executioner greatsword with blood channels, dark grim atmosphere, style of Berserk Kentaro Miura, Blasphemous, Darkest Dungeon, cinematic lighting, gothic, grimdark, highly detailed, 8k --ar 9:16`
+Dự án tuân thủ mô hình **Component-based** hướng đối tượng sạch sẽ của Godot 4:
 
-### 6.2. Kẻ Cai Ngục Khóc Máu (The Weeping Jailer)
-> `Dark fantasy boss concept art, a grotesque hulking 3-meter tall prison warden, rusted armor, wearing a weeping iron mask crying streams of dark red blood, carrying a large rusted iron cage full of starving human skulls on his back, wielding a giant key flail and a spiked rusted iron club, dark medieval dungeon background, horrific atmosphere, style of Berserk and Blasphemous, 8k --ar 9:16`
-
-### 6.3. Bối Cảnh Chiến Trường (Gothic Cathedral Corridor)
-> `Side-view battle stage background for a turn-based dark fantasy RPG, a ruined desecrated gothic cathedral corridor, shattered stained glass windows with faint moonlight shining through, blood-soaked stone floor, hanging rusted cages and chains, crumbling stone pillars with thorny vines, grim and oppressive atmosphere, Blasphemous aesthetic, painterly dark fantasy concept art --ar 16:9`
+1. **Bộ Điều Khiển Người Chơi ([`scripts/player.gd`](file:///d:/Project/sin-eater/scripts/player.gd)):**
+   - Chịu trách nhiệm vật lý di chuyển (`velocity`), Nhảy đúp (`jump`), Lướt né (`dash` có I-frames), và lắng nghe nút Parry.
+   - Giữ tham chiếu linh hoạt tới vũ khí hiện tại:
+     ```gdscript
+     @onready var current_weapon: BaseWeapon = $Visual/CurrentWeapon
+     ```
+2. **Lớp Cơ Sở Vũ Khí ([`scripts/weapons/base_weapon.gd`](file:///d:/Project/sin-eater/scripts/weapons/base_weapon.gd)):**
+   - Định nghĩa Interface chung cho 4 món vũ khí:
+     ```gdscript
+     func attack() -> void
+     func dash_attack() -> void
+     func parry() -> void
+     func cast_special() -> void
+     ```
+   - Chứa biến `bloodlust: float` (0 đến 100) và phát tín hiệu cập nhật giao diện HUD.
+3. **Cơ Chế Hắc Huyết Máu Đen Trên Kẻ Địch ([`scripts/dummy.gd`](file:///d:/Project/sin-eater/scripts/dummy.gd)):**
+   - Kẻ địch quản lý: `current_health: float`, `black_health: float`, và `decay_timer: float`.
+   - Khi nhận đòn từ Cặp Vuốt: chuyển sát thương thành `black_health`.
+   - Khi nhận đòn kích nổ (Detonate): trừ thẳng `current_health -= black_health; black_health = 0`.
+4. **Hệ Thống Phản Hồi Giác Quan (Game Juice):**
+   - **Hit-stop (Micro-freeze):** Ngưng đọng thời gian 0.05s khi chém thường và 0.08s khi Parry / Đòn đặc biệt.
+   - **Screen Shake:** Rung nhẹ ở nhát chém thứ 3 và rung mạnh ở đòn [E] Đòn Đặc Biệt.
