@@ -1,29 +1,29 @@
 # TÀI LIỆU THIẾT KẾ GAME TOÀN DIỆN (COMPREHENSIVE GAME DESIGN DOCUMENT)
 **Tên dự án:** *GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)*  
 **Thể loại:** 2D Fast-paced Dark Fantasy Action Platformer (Chặt chém tốc độ cao, Đối kháng phản xạ)  
-**Phong cách hình ảnh:** 2D Side-scrolling Gothic Dark Fantasy (*Darkest Dungeon*, *Berserk*, *Dead Cells*, *Nine Sols*, *Sekiro*)  
+**Phong cách hình ảnh:** 2D Side-scrolling Gothic Dark Fantasy (Đồ họa vẽ tay 2D, tương phản sáng tối gắt Chiaroscuro, giáp sắt rỉ sét, đường nét sắc nhọn)  
 **Trọng tâm trải nghiệm (Core Fantasy):** Cảm giác bay nhảy tự do ("phiêu"), chặt chém đanh thép ("đã tay"), né đòn bất tử (I-frames Dash), phản đòn nảy lửa (Parry "KENG!"), và tự do luân chuyển 4 phong cách chiến đấu của Tứ Đại Thần Khí.  
-**Cơ chế Boss đặc quyền:** **MỖI BOSS 2 PHASE: Thống Soái Cánh Quân (Đấu võ nghệ 1v1 tốc độ cao) $\rightarrow$ Cổ Thần Bung Xích (Chiến quái thú vũ trụ) $\rightarrow$ Thu phục Cổ Thần vào kho vũ khí của người chơi!**  
-**Trùm Cuối Tối Thượng:** **ĐOÀN TRƯỞNG VALERIUS & THẦN THỂ DUNG HỢP (The Ascended Usurper).**
+**Cơ chế Boss đặc quyền:** **MỖI BOSS 2 PHASE: Thống Soái Cánh Quân (Đấu võ nghệ 1v1 tốc độ cao) $\rightarrow$ Cổ Thần Bung Xích (Chiến quái thú khổng lồ) $\rightarrow$ Thu phục Cổ Thần vào kho vũ khí của người chơi!**  
+**Trùm Cuối Tối Thượng:** **ĐOÀN TRƯỞNG KAELEN & THẦN THỂ DUNG HỢP (The Usurper God) $\rightarrow$ SECRET FINAL BOSS: CỔ THẦN ĐẦU TIÊN (The First Old God).**
 
 ---
 
 ## 1. BỐI CẢNH THẾ GIỚI & CỐT TRUYỆN (WORLD LORE)
 
 ### 1.1. Cuộc Nội Chiến Tứ Quân & Tứ Đại Thần Khí
-- **Tứ Đại Cổ Thần:** Bốn thực thể nguyên thủy trôi nổi ngoài vũ trụ hoặc ngủ sâu trong lòng đất, bị Giáo triều cổ đại xé thịt phong ấn vào 4 bảo khí định quốc: **Kiếm Đơn** (Trật Tự), **Cặp Vuốt Sắt** (Bóng Tối), **Lưỡi Liềm** (Tham Ăn), và **Đại Kiếm** (Cuồng Nộ).
-- **Đại Loạn Tứ Quân:** Đế quốc sụp đổ, 4 quân đoàn lớn tranh đoạt thần quyền:
-  1. **Quân Đoàn Ánh Sáng Trật Tự** (Phe ta - Do Đoàn trưởng Valerius thống lĩnh).
-  2. **Quân Đoàn Ám Ảnh Sát Thủ** (Chiếm giữ pháo đài bóng đêm, dùng Vuốt Bóng Tối ám sát tướng lĩnh).
-  3. **Giáo Hội Phàm Thực / Tham Ăn** (Chiếm giữ đầm lầy hầm mộ, dùng Liềm thu hoạch sinh mệnh nuôi cơn đói).
-  4. **Quân Thiết Bọc Cuồng Chiến** (Cố thủ trong thành trì đá đen, dùng Đại Kiếm Cuồng Nộ và cơ bắp nghiền nát kẻ thù).
-- **Kẻ Được Chọn Của Thần Trật Tự:** Bạn là Đội Trưởng Tiên Phong của Quân Đoàn Trật Tự — người phàm duy nhất được Cổ Thần Trật Tự Aethelgard trong Kiếm Đơn công nhận. Bạn nhận lệnh của Đoàn trưởng Valerius mang kiếm dẹp loạn 3 cánh quân phản nghịch để thống nhất giang sơn.
+- **Tứ Đại Cổ Thần:** Bốn nguồn sức mạnh nguyên sinh của đại địa bị Giáo triều cổ đại phong ấn vào 4 bảo khí định quốc: **Kiếm Đơn** (Ánh Sáng), **Cặp Vuốt Sắt** (Bóng Tối), **Lưỡi Liềm** (Đói Khát), và **Trọng Kiếm** (Hủy Diệt).
+- **Đại Loạn Tứ Quân:** Vương quốc sụp đổ, 4 quân đoàn lớn tranh đoạt thần quyền:
+  1. **Quân Đoàn Bình Minh (The Knights of Sunrise):** Do Đoàn trưởng Kaelen thống lĩnh, giương ngọn cờ rạng đông lập lại hòa bình, nắm giữ Kiếm Đơn Ánh Sáng.
+  2. **Quân Đoàn Ám Ảnh Dạ Hành:** Cố thủ trong pháo đài ngầm phía Bắc, dùng Vuốt Bóng Tối ám sát tướng lĩnh.
+  3. **Giáo Hội Phàm Thực:** Chiếm giữ đầm lầy hầm mộ phía Đông, dùng Lưỡi Liềm thu hoạch sinh mệnh nuôi cơn đói.
+  4. **Quân Thiết Bọc Hủy Diệt:** Cố thủ trong thành trì đá đen, dùng Trọng Kiếm cơ bắp nghiền nát mọi thứ.
+- **Kẻ Được Chọn Của Thần Ánh Sáng:** Bạn là Đội Trưởng Tiên Phong của Quân Đoàn Bình Minh — người duy nhất được Thần Ánh Sáng trong Kiếm Đơn công nhận sau khi thanh kiếm từ chối và phản phệ Kaelen. Bạn nhận lệnh của Kaelen mang kiếm dẹp loạn 3 cánh quân phản nghịch để hoàn thành đại nghiệp.
 
-### 1.2. Bi Kịch Cứu Thế Cực Đoan Của Đoàn Trưởng Valerius
-- **Mảnh Di Vật Tiên Tri & Nỗi Sợ Tận Thế:** Valerius từng là vị tướng kiệt xuất, yêu thương anh em như ruột thịt. Hắn nhặt được Mảnh Di Vật Tiên Tri và nhìn thấy trước cảnh **The Oldest God (Đấng Thủy Tổ Cổ Xưa Nhất)** thức tỉnh nghiền nát nhân loại.
-- **Sự Cự Tuyệt Của Thần Trật Tự & Vỡ Mộng:** Ban đầu hắn muốn hợp nhất 4 Thần Khí để mượn sức mạnh thần thánh cứu thế. Nhưng khi bị thanh Kiếm Trật Tự từ chối (và chọn bạn), hắn cay đắng nhận ra: *Cổ Thần hoàn toàn vô cảm, không bao giờ cứu loài người!*
-- **Quyết Định Hiến Tế Bi Kịch (The Eclipse):** Trước đồng hồ đếm ngược của ngày tận thế, Valerius tự thuyết phục bản thân bằng một logic toán học tàn nhẫn: *"10 vạn anh em đằng nào cũng chết trong miệng Đấng Thủy Tổ. Thà dùng sinh mệnh của họ làm ngọn lửa tế đàn để ta HÓA THÀNH TÂN THẦN, chém chết Đấng Thủy Tổ cứu lấy hàng triệu sinh linh còn lại!"*
-- **Sứ Mệnh Ngăn Chặn Của Người Phàm:** Tại Ngai Vàng, bạn rút kiếm đối đầu với kẻ từng là người anh cả kính yêu — khẳng định phẩm giá và ý chí của người phàm không bao giờ thỏa hiệp với sự phản bội đồng đội!
+### 1.2. Bi Kịch Của Đoàn Trưởng Kaelen & Tàn Dư The First Old God
+- **Cú Ngã Nhận Thức & Tham Vọng Thăng Thần:** Kaelen là một vị tướng thiên tài bẩm sinh, luôn tự tin là "Kẻ Được Chọn". Sau khi bị Kiếm Ánh Sáng từ chối và bị quân đoàn *The Shadow Brotherhood* tập kích, hắn tận mắt chứng kiến sức mạnh hủy diệt của Cổ Thần và cay đắng nhận ra con người chỉ là sâu bọ. Chính Bạn đã vung kiếm cứu sống hắn. Nỗi tuyệt vọng và nhục nhã đã thúc đẩy một tham vọng điên cuồng: *Phải bước lên hàng ngũ Thần Linh tối cao.*
+- **Đền Thờ Dưới Hang Động & Tàn Dư The First Old God:** Trong một lần dẹp loạn cứu một ngôi làng bị quái vật tàn sát, Kaelen lần theo hang động nguồn cơn quái vật và phát hiện phế tích đền thờ phong ấn **Tàn Dư của Cổ Thần Đầu Tiên (The First Old God)**. Tại đây, hắn học được cấm thuật: Để dung nạp trọn vẹn 4 Cổ Thần mà không bị nổ xác, hắn phải kích hoạt **"Lễ Hiến Tế Trăng Máu"** để thăng hoa thành Tân Thần.
+- **Động Cơ Bi Kịch: Tự Trảm Nhân Tính:** Cấm thuật đòi hỏi kẻ thăng thần phải tẩy sạch phần "người" yếu đuối. Vì Kaelen **thực sự yêu quý Quân Đoàn Bình Minh** (đây là sợi dây nhân tính lớn nhất đời hắn), hắn đã quyết định tự tay hiến tế toàn bộ quân đoàn dưới Trăng Máu — hy sinh thứ quý giá nhất để giết chết trái tim phàm trần, bước lên ngai thần vô cảm!
+- **Sứ Mệnh Ngăn Chặn:** Tại Ngai Vàng Kinh Đô, chứng kiến Kaelen kích hoạt đại tế đàn biến anh em thành Huyết Kén Thần Tính, bạn rút Kiếm Ánh Sáng đứng lên tử chiến ngăn chặn người anh em phản đạo!
 
 ---
 
@@ -73,14 +73,12 @@ Tam giác chiến đấu vận hành xoay quanh: **CƠ ĐỘNG TỐC ĐỘ CAO �
 
 ## 3. HỆ THỐNG TỨ ĐẠI THẦN KHÍ (MULTI-WEAPON ARSENAL)
 
-Mỗi Cổ Thần là một món vũ khí riêng biệt với cơ chế gameplay độc nhất:
-
 | Thần Khí | Cổ Thần Ngự Trị | Đặc trưng lối chơi | Cơ chế độc quyền (Passive & Normal Attack) | Đòn Đặc Biệt [E] (Khi đầy Khát Máu) |
 | :--- | :--- | :--- | :--- | :--- |
-| 🗡️ **Kiếm Đơn** *(Khởi đầu)* | **Aethelgard** *(Trật Tự)* | Điềm tĩnh, sải đòn chuẩn mực, nhịp điệu hoàn hảo, thưởng cực lớn cho phản xạ. | **Parry Master ("KENG!"):** Khung đỡ đòn chuẩn xác, bẻ gãy đòn quái và hồi máu nhẹ khi Riposte. Bạn là người duy nhất được thần công nhận. | **Nhất Kiếm Tịch Diệt:** Ngưng đọng thời gian 0.5s, chém rạch đôi không gian trước mặt. |
-| 🩸 **Cặp Vuốt Sắt** *(Đoạt tại Ải 1)* | **Umbrath** *(Bóng Tối)* | Tốc độ chém xé bão táp, sát thủ áp sát, dồn ép mục tiêu, biến ảo. | **Hắc Huyết Xâm Thực (Withering Black Health):** Đòn cào chuyển hóa máu địch sang **Màu Đen** theo từng đoạn. Khi kích nổ (đòn kết thúc combo hoặc đòn [E]), địch lập tức mất toàn bộ lượng máu đen đó! | **Hắc Ảnh Loạn Vũ (Shadow Dance):** Biến thành bóng đen lướt chém ziczac 6 nhát liên tiếp toàn màn hình (hoàn toàn bất tử trong lúc chém), nhát cuối chém xuyên tâm kích nổ toàn bộ lượng máu đen! |
-| ⛓️ **Lưỡi Liềm** *(Đoạt tại Ải 2)* | **Vorax** *(Tham Ăn / Phàm Thực)* | Quét 360 độ diện rộng, không chiến (Air Combat), khống chế và kéo cự ly quái. | **Reaper Feast:** Quét liềm kéo giật bầy quái về gần mình để "ăn thịt". Tốc độ nạp Khát Máu nhanh gấp đôi các vũ khí khác. | **Bạo Thực Yến Tiệc (Devouring Vortex):** Tạo miệng xoáy hư không háu đói hút toàn bộ quái xung quanh vào tâm, nghiền nát và nuốt trọn sinh lực (hồi máu cho người chơi). |
-| 🛡️ **Đại Kiếm** *(Đoạt tại Ải 3)* | **Vargon** *(Cuồng Nộ & Sức Nặng)* | Nặng nề, uy lực chấn động, siêu giáp (Hyper-armor), đập vỡ khiên giáp, sức mạnh cơ bắp. | **Hyper-Armor Slash:** Đòn chém không thể bị ngắt bởi đòn đánh thường của quái, đập vỡ thế thủ (Guard Break) của kẻ mang khiên. | **Cuồng Thần Thức Tỉnh (Berserk Fury):** Nhân vật gầm thét phát điên, mắt đỏ rực. Trong 8 giây: Miễn nhiễm hoàn toàn choáng/ngắt chiêu, tăng 60% sát thương, mỗi nhát chém phóng ra sóng xung kích! |
+| 🗡️ **Kiếm Đơn** *(Khởi đầu)* | **Thần Ánh Sáng** | Điềm tĩnh, chuẩn mực, sải đòn phản xạ, thưởng lớn cho sự chính xác. | **Parry Master ("KENG!"):** Khung đỡ đòn chuẩn xác 0.18s, bẻ gãy đòn quái, hồi máu nhẹ khi Riposte. Bạn là người duy nhất được thần công nhận. | **Nhất Kiếm Tịch Diệt:** Ngưng đọng thời gian 0.5s, chém rạch đôi không gian trước mặt bằng nhát kiếm hoàng kim. |
+| 🩸 **Cặp Vuốt Sắt** *(Ải 1)* | **Thần Bóng Tối** | Tốc độ chém xé bão táp, sát thủ áp sát, dồn ép mục tiêu, biến ảo. | **Hắc Huyết Xâm Thực (Withering Black Health):** Đòn cào chuyển hóa máu địch sang **Màu Đen** theo từng đoạn. Khi kết thúc combo hoặc lướt chém, kích nổ trừ sạch đoạn máu đen đó! | **Hắc Ảnh Loạn Vũ (Shadow Dance):** Hóa bóng lướt chém ziczac 6 nhát liên tiếp toàn màn hình (hoàn toàn bất tử trong lúc chém), nhát cuối kích nổ toàn bộ lượng máu đen! |
+| ⛓️ **Lưỡi Liềm** *(Ải 2)* | **Thần Đói Khát** | Quét 360 độ diện rộng, không chiến trên không, khống chế và kéo quái. | **Reaper Harvest:** Quét liềm kéo giật bầy quái về gần mình để "ăn thịt". Tốc độ nạp Khát Máu nhanh gấp đôi các vũ khí khác. | **Bạo Thực Yến Tiệc (Devouring Vortex):** Tạo miệng xoáy hư không háu đói hút toàn bộ quái xung quanh vào tâm, nghiền nát và nuốt trọn sinh lực (hồi máu cho người chơi). |
+| 🛡️ **Trọng Kiếm** *(Ải 3)* | **Thần Hủy Diệt** | Nặng nề, uy lực chấn động, sức mạnh cơ bắp, đập vỡ khiên giáp. | **Hyper-Armor Slash:** Đòn chém quán tính không thể bị ngắt bởi quái thường, đập vỡ nát tư thế phòng ngự (Guard Break) của kẻ mang khiên. | **Cuồng Thần Thức Tỉnh (Berserk Fury):** Gầm thét phát điên, mắt đỏ rực. Trong 8 giây: Miễn nhiễm choáng/ngắt chiêu, tăng 60% sát thương, mỗi nhát chém phóng sóng xung kích hủy diệt! |
 
 ---
 
@@ -115,27 +113,33 @@ flowchart TD
     end
 ```
 
-### Chi tiết Dàn Boss 4 Chương:
+### Chi tiết Dàn Boss & Màn Chơi 5 Chương:
 
 1. **Ải 1: Pháo Đài Ngầm Của Quân Sát Thủ (The Umbral Catacombs)**
    - **Phase 1 — Sát Thủ Vô Ảnh Corina:** Tốc độ âm thanh, tàng hình biến ảo, lướt chém ziczac sau lưng người chơi.
-   - **Phase 2 — Umbrath Bung Xích (Cổ Thần Bóng Tối):** Đấu trường chìm vào bóng đêm tuyệt đối, Umbrath hiện thân thành thực thể bóng tối nghìn mắt phóng phi đao hắc ám từ hư không.
-   - **Phần thưởng:** Thu phục **Cặp Vuốt Sắt Umbrath** (mở khóa Hắc Huyết Xâm Thực & Hắc Ảnh Loạn Vũ chém 6 nhát bất tử).
+   - **Phase 2 — Cổ Thần Bóng Tối Bung Xích:** Đấu trường chìm vào bóng đêm, phóng phi đao hắc ám từ hư không.
+   - **Phần thưởng:** Thu phục **Cặp Vuốt Sắt Bóng Tối** (mở khóa Hắc Huyết Xâm Thực & Hắc Ảnh Loạn Vũ chém 6 nhát bất tử).
 
 2. **Ải 2: Đầm Lầy Tu Viện Phàm Thực (The Mire of Devouring Bones)**
    - **Phase 1 — Nữ Trưởng Tu Morwenna:** Múa liềm xích 360 độ, tạo đầm lầy hút chân và triệu hồi bầy quái háu đói.
-   - **Phase 2 — Vorax Bung Xích (Cổ Thần Tham Ăn):** Hóa thành quái thú hàm ngoạm khổng lồ háu đói nuốt trọn không gian, tạo các hố đen hút sinh lực.
-   - **Phần thưởng:** Thu phục **Lưỡi Liềm Vorax** (mở khóa Reaper Feast & Bạo Thực Yến Tiệc).
+   - **Phase 2 — Cổ Thần Đói Khát Bung Xích:** Hóa thành quái thú hàm ngoạm khổng lồ nuốt trọn không gian, tạo các hố đen hút sinh lực.
+   - **Phần thưởng:** Thu phục **Lưỡi Liềm Đói Khát** (mở khóa Reaper Harvest & Bạo Thực Yến Tiệc).
 
-3. **Ải 3: Thành Trì Thiết Bọc Cuồng Chiến (The Iron Berserk Bastion)**
-   - **Phase 1 — Thống Chế Thiết Hạm Roderick:** Mang đại trọng giáp và đại khiên, vung đại kiếm bổ nứt sàn đá, đòi hỏi lướt né ra sau gáy phá thế.
-   - **Phase 2 — Vargon Bung Xích (Cổ Thần Cuồng Nộ):** Khổng lồ nham thạch cuồng nộ gầm thét, dậm chân tạo sóng xung kích và mưa đá rơi tự do.
-   - **Phần thưởng:** Thu phục **Đại Kiếm Vargon** (mở khóa Hyper-Armor & Cuồng Thần Thức Tỉnh [E] phát điên tăng DMG).
+3. **Ải 3: Thành Trì Thiết Bọc Hủy Diệt (The Ruin Bastion)**
+   - **Phase 1 — Thống Chế Roderick:** Mang đại trọng giáp và đại khiên, vung đại kiếm bổ nứt sàn đá, đòi hỏi lướt né ra sau gáy phá thế.
+   - **Phase 2 — Cổ Thần Hủy Diệt Bung Xích:** Khổng lồ nham thạch cuồng nộ gầm thét, dậm chân tạo sóng xung kích và mưa đá rơi tự do.
+   - **Phần thưởng:** Thu phục **Trọng Kiếm Hủy Diệt** (mở khóa Hyper-Armor & Cuồng Thần Thức Tỉnh [E] phát điên tăng DMG).  
+   *(Tại đây, người chơi hoàn tất trọn bộ Tứ Đại Thần Khí ở mốc 60% game!)*
 
-4. **Ải 4: Kinh Đô Hoàng Kim & Ngai Vàng Phản Bội — FINAL CLIMAX**
-   - **Sự kiện The Eclipse:** Đoàn trưởng Valerius kích hoạt cấm trận hiến tế toàn quân đoàn để Hóa Thần.
-   - **Phase 1 — Valerius Kẻ Cướp Ngai:** Đấu kiếm hoàng kim tốc độ âm thanh, Valerius có khả năng parry ngược lại đòn đánh của người chơi.
-   - **Phase 2 — Quái Thai Thần Vị (The Ascended Abomination):** Valerius bị quyền năng của 4 Cổ Thần làm biến dạng thành một thực thể quái thai thần quyền vũ trụ khổng lồ. Người chơi phải luân chuyển cả 4 vũ khí để ngăn chặn và hủy diệt hắn!
+4. **Ải 4: Kinh Đô Huyết Ngục & Nhật Thực Trăng Máu (The Blood-Sun Metropolis) — SÂN CHƠI FULL 4 VŨ KHÍ**
+   - **Bối cảnh:** Kaelen kích hoạt Lễ Hiến Tế Trăng Máu biến 10 vạn quân thành Huyết Kén thăng thần. Kinh đô hóa biển máu quái dị.
+   - **Gameplay:** Người chơi dùng trọn vẹn 4 Thần Khí càn quét qua cống ngầm, cầu treo và quảng trường đổ nát để phá hủy **3 Trụ Cột Huyết Mạch (Blood Anchors)** do 3 Hộ Vệ Huyết Ma trấn giữ.
+   - **Thử thách tích hợp:** Đòi hỏi luân chuyển linh hoạt giữa Parry kiếm đơn, găm máu đen vuốt sắt, quét liềm kéo bầy quái bay và đập vỡ khiên/tường đá bằng trọng kiếm.
+
+5. **Ải 5: Thiên Đỉnh Tháp Ngai Vàng & Cõi Thần Tối Sơ — FINAL CLIMAX**
+   - **Phase 1 — Đoàn Trưởng Kaelen (The Fallen Commander):** Đấu kiếm hoàng kim tốc độ âm thanh, Kaelen có khả năng parry ngược lại đòn đánh của bạn.
+   - **Phase 2 — Kaelen Thần Thể Dung Hợp (The Usurper God):** Kaelen kích nổ Huyết Kén cưỡng ép thăng thần, hóa thành quái thai thần quyền 4 cánh tay mang đặc tính 4 Cổ Thần.
+   - **Phase 3 / Secret Boss — CỔ THẦN ĐẦU TIÊN (The First Old God):** Thực thể tối sơ thức tỉnh nuốt chửng biển máu tế đàn. Trận tử chiến vũ trụ đoạt lại quyền năng tái sinh quân đoàn!
 
 ---
 

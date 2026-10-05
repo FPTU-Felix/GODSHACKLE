@@ -1,4 +1,4 @@
-# 📖 SỔ TAY GIẢI MÃ KIẾN TRÚC CODE: SIN EATER — LỜI THỀ THẦN KHÍ
+# 📖 SỔ TAY GIẢI MÃ KIẾN TRÚC CODE: GODSHACKLE (PHƯỢC THẦN CHI TỎA)
 ### *(Dành riêng cho bạn - Người mới bắt đầu, không cần biết sâu về code vẫn hiểu 100%)*
 
 > **Chào bạn!** Cuốn sổ tay này được biên soạn để bạn làm chủ toàn bộ kiến trúc mã nguồn trong dự án.  
@@ -16,7 +16,7 @@ Dự án hiện tại được tổ chức theo kiến trúc **Component-Based (
 | [`scenes/player.tscn`](file:///d:/Project/sin-eater/scenes/player.tscn) | Scene | **Hình thể Hiệp Sĩ**: Gồm khối va chạm thân thể (`CharacterBody2D`), khối hình ảnh hiển thị (`Visual`), Thần Khí gắn trên tay và vùng nhận đòn (`HurtBox`). |
 | [`scripts/player.gd`](file:///d:/Project/sin-eater/scripts/player.gd) | Script | **Não bộ di chuyển & phản xạ**: Điều khiển chạy (`A`/`D`), Nhảy đúp (`jump`), Lướt né bất tử I-frames (`dash`), và lắng nghe lệnh Parry/Attack. |
 | [`scripts/weapons/base_weapon.gd`](file:///d:/Project/sin-eater/scripts/weapons/base_weapon.gd) | Script | **Lớp Cơ Sở Thần Khí (Base Class)**: Khuôn mẫu chung cho mọi vũ khí Cổ Thần. Quy định các hành động: Chém thường, Lướt chém, Parry, và Cast đòn đặc biệt khi đầy Khát Máu. |
-| [`scripts/weapons/weapon_dolorosa.gd`](file:///d:/Project/sin-eater/scripts/weapons/weapon_dolorosa.gd) | Script | **Thần Khí 1: Cự Đại Kiếm Ignis**: Quản lý chuỗi Combo 3 nhát chém, Lướt chém, thanh Khát Máu (`bloodlust`) và đòn đặc biệt [E]. |
+| [`scripts/weapons/weapon_dolorosa.gd`](file:///d:/Project/sin-eater/scripts/weapons/weapon_dolorosa.gd) | Script | **Thần Khí Khởi Đầu: Kiếm Đơn Ánh Sáng**: Quản lý chuỗi Combo 3 nhát chém, Lướt chém, thanh Khát Máu (`bloodlust`), phản đòn Parry và đòn đặc biệt [E]. |
 | [`scenes/Dummy.tscn`](file:///d:/Project/sin-eater/scenes/Dummy.tscn) | Scene | **Bù nhìn tập đánh**: Mục tiêu thử nghiệm để test sát thương, kiểm tra va chạm đòn đánh. |
 | [`scripts/dummy.gd`](file:///d:/Project/sin-eater/scripts/dummy.gd) | Script | **Bộ nhận đòn của Bù nhìn**: Lắng nghe đòn chém từ Hurtbox, trừ máu, chớp trắng báo hiệu bị trúng đòn. |
 | [`scripts/combat/hitbox.gd`](file:///d:/Project/sin-eater/scripts/combat/hitbox.gd) | Script | **Lưỡi Kiếm (Vùng gây sát thương)**: `Area2D` mang thông số sát thương, lực đẩy lùi (`knockback_force`) và lượng nạp máu (`bloodlust_gain`). |
@@ -72,7 +72,7 @@ Trong file [`scripts/weapons/weapon_dolorosa.gd`](file:///d:/Project/sin-eater/s
   - Reset `bloodlust` về 0 để bắt đầu chu kỳ nạp máu mới.
 
 ### 3. Cơ chế Đa Thần Khí (Multi-Weapon System):
-- Vì [`player.gd`](file:///d:/Project/sin-eater/scripts/player.gd) chỉ giao tiếp với lớp trừu tượng `BaseWeapon`, sau này khi bạn thêm **Song Đao Morvath** (`weapon_twin_daggers.gd`) hoặc **Liềm Xích Vespera** (`weapon_chain_scythe.gd`), bạn chỉ việc tráo đổi node vũ khí mà **không cần sửa một dòng code di chuyển nào của Player**!
+- Vì [`player.gd`](file:///d:/Project/sin-eater/scripts/player.gd) chỉ giao tiếp với lớp trừu tượng `BaseWeapon`, sau này khi bạn thêm **Cặp Vuốt Sắt Bóng Tối** (`weapon_shadow_claws.gd`) hoặc **Lưỡi Liềm Đói Khát** (`weapon_hunger_scythe.gd`), bạn chỉ việc tráo đổi node vũ khí mà **không cần sửa một dòng code di chuyển nào của Player**!
 
 ### 4. Kiến trúc State Machine cho Boss 2 Phase:
 Khi viết code cho Boss ở máy nhà, bạn chỉ cần áp dụng mô hình Máy trạng thái (FSM):
