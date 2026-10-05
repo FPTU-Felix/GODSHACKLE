@@ -1,5 +1,5 @@
-# ⚔️ BỘ PROMPT AI TẠO HÌNH ẢNH 2D: GODSHACKLE (PHƯỢC THẦN CHI TỎA)
-**Dự án:** *GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)*  
+# ⚔️ BỘ PROMPT AI TẠO HÌNH ẢNH 2D: ASHEN DAWN (HÔI TẪN LÊ MINH)
+**Dự án:** *ASHEN DAWN: HÔI TẪN LÊ MINH (The Ashen Eclipse)*  
 **Thể loại:** 2D Fast-paced Dark Fantasy Action Platformer  
 **Phong cách mỹ thuật nguyên bản:** Dark Fantasy Gothic Trung Cổ, Chiaroscuro tương phản gắt gao giữa ánh sáng hoàng kim và bóng tối vực thẳm, giáp sắt xám chém sứt mẻ rỉ sét, xích sắt phong ấn thiên thạch, đường nét vẽ tay sắc sảo (crisp hand-drawn 2D game asset outlines).
 

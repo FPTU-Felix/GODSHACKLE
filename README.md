@@ -1,17 +1,17 @@
-# ⚔️ GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)
+# ⚔️ ASHEN DAWN: HÔI TẪN LÊ MINH (The Ashen Eclipse)
 > **2D Fast-paced Dark Fantasy Action Platformer**  
 > *Phát triển trên Godot Engine 4.x (Forward+ / D3D12)*
 
 ---
 
 ## 📖 1. TỔNG QUAN DỰ ÁN
-**GODSHACKLE: PHƯỢC THẦN CHI TỎA** đưa người chơi vào bối cảnh một đế quốc cổ đại sụp đổ trong cuộc nội chiến đẫm máu giữa **4 cánh quân tranh đoạt thần quyền**. Mỗi cánh quân chiếm giữ một **Thần Khí** — bảo khí giam cầm một Cổ Thần nguyên sinh của đại địa.
+**ASHEN DAWN: HÔI TẪN LÊ MINH** đưa người chơi vào bối cảnh một thế giới nơi Tứ Đại Cổ Thần nguyên sinh từng bị tổ tiên phong ấn bằng xích sắt thiên thạch vào **4 món Thần Khí** trong *Cuộc Chiến Xiềng Xích (The Binding War)*. Khi đế quốc sụp đổ, 4 đại quân đoàn cát cứ xâu xé vương quốc để tranh đoạt thần quyền.
 
-Bạn là **Hiệp Sĩ Tiên Phong** của **Quân Đoàn Bình Minh (The Knights of Sunrise)** — người phàm duy nhất được **Thần Ánh Sáng** trong thanh **Kiếm Đơn** công nhận. Dưới sự dẫn dắt của **Đoàn Trưởng Kaelen**, bạn dấn thân vào con đường viễn chinh khốc liệt nhằm dẹp loạn 3 cánh quân phản nghịch, thu thập đủ 4 Thần Khí để mang lại hòa bình và ánh rạng đông cho vương quốc.
+Năm xưa, ngôi làng của bạn bị chiến tranh cướp bóc thiêu rụi; giữa đống tro tàn, **Đoàn Trưởng Kaelen** đã cứu mạng, nuôi nấng và dạy bạn kiếm thuật. Lớn lên dưới ngọn cờ **Quân Đoàn Bình Minh (The Knights of Sunrise)**, bạn trở thành Đội Trưởng Tiên Phong và là người duy nhất được **Cổ Thần Ánh Sáng** trong thanh **Kiếm Đơn** công nhận. Bạn dốc hết lòng trung kiên xuất chinh dẹp loạn 3 cánh quân để thu thập đủ 4 Thần Khí mang lại rạng đông cho trần thế.
 
 Thế nhưng, ngay trong khúc khải hoàn tại Kinh Đô Hoàng Kim, Kaelen đã kích hoạt cấm thuật: Để vượt thoát kiếp phàm trần và dung nạp trọn vẹn 4 Cổ Thần, hắn dùng tàn dư của **The First Old God (Cổ Thần Đầu Tiên)** kích hoạt **Lễ Hiến Tế Trăng Máu** — **tự tay hiến tế toàn bộ mười vạn binh lính Quân Đoàn Bình Minh** mà hắn yêu quý nhất nhằm triệt để chặt đứt mối liên kết cuối cùng với nhân tính, bước lên ngai Tân Thần! 
 
-Đứng trước sự phản bội tàn độc của người chủ tướng từng gắn bó máu thịt, bạn sống sót nhờ ánh sáng thần kiếm che chở. Với trọn vẹn Tứ Đại Thần Khí trong tay, bạn chiến đấu xuyên qua **Kinh Đô Huyết Ngục (Ải 4)** để phá hủy các Trụ Cột Huyết Mạch, trước khi đạp cửa bước lên **Thiên Đỉnh Tháp (Ải 5)** mở màn trận tử chiến diệt thần!
+Đứng trước sự phản bội tàn khốc của người thầy, người anh cả từng cứu sống mình, bạn sống sót nhờ hào quang của Cổ Kiếm che chở. Với trọn vẹn Tứ Đại Thần Khí trong tay, bạn chiến đấu xuyên qua **Kinh Đô Huyết Ngục (Ải 4)** để phá hủy các Trụ Cột Huyết Mạch, trước khi đạp cửa bước lên **Thiên Đỉnh Tháp (Ải 5)** mở màn trận tử chiến diệt thần!
 
 ---
 

@@ -1,7 +1,7 @@
-# 🩸 KỊCH BẢN & CỐT TRUYỆN TOÀN TẬP: GODSHACKLE (PHƯỢC THẦN CHI TỎA)
-### *(The Caged Gods: Cuộc Nội Chiến Tứ Quân & Sự Trỗi Dậy Của Cổ Thần Đầu Tiên)*
+# 🩸 KỊCH BẢN & CỐT TRUYỆN TOÀN TẬP: ASHEN DAWN (HÔI TẪN LÊ MINH)
+### *(Rạng Đông Tro Tàn: Cuộc Đại Phong Ấn Thái Cổ, Tình Huynh Đệ Bi Kịch & Sự Trỗi Dậy Của Cổ Thần)*
 
-**Tác phẩm:** *GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)*  
+**Tác phẩm:** *ASHEN DAWN: HÔI TẪN LÊ MINH (The Ashen Eclipse)*  
 **Thể loại:** Dark Fantasy Grimdark, Fast-paced Action Platformer  
 **Trọng tâm trải nghiệm:** Kiếm thuật chuẩn xác, phản đòn nảy lửa (Parry "KENG!"), né đòn lướt bóng (I-frames Dash), cơ động tốc độ cao, và luân chuyển 4 phong cách chiến đấu của Tứ Đại Thần Khí.  
 **Cơ chế Boss đặc quyền:** **MỖI BOSS 2 PHASE: Thống Soái Cánh Quân (Đấu võ nghệ 1v1 tốc độ cao) $\rightarrow$ Cổ Thần Bung Xích (Chiến quái thú khổng lồ) $\rightarrow$ Thu phục Cổ Thần vào kho vũ khí của bạn!**  
@@ -9,25 +9,40 @@
 
 ---
 
-## 🏛️ PHẦN 1: BỐI CẢNH THẾ GIỚI — NỘI CHIẾN TỨ QUÂN TRANH ĐOẠT THẦN QUYỀN
+## 🏛️ PHẦN 1: BỐI CẢNH THẾ GIỚI — THẦN THOẠI THÁI CỔ & NỘI CHIẾN TỨ QUÂN
 
 ```mermaid
 flowchart TD
-    A["ĐẾ QUỐC CỔ ĐẠI SỤP ĐỔ:\nLong mạch kiệt quệ, 4 đại quân đoàn cát cứ\nTranh giành quyền thống trị tối thượng"] 
-    --> B["TỨ ĐẠI THẦN KHÍ (4 NGUỒN SỨC MẠNH CỔ ĐẠI):\nMỗi cánh quân nắm giữ 1 vũ khí chứa Cổ Thần nguyên sinh\nÁnh Sáng, Bóng Tối, Đói Khát, và Hủy Diệt"]
-    B --> C["BIẾN CHẤT CỦA ĐOÀN TRƯỞNG KAELEN:\nKhám phá tàn tích đền thờ CỔ THẦN ĐẦU TIÊN (The First Old God)\nQuyết định KÍCH HOẠT LỄ HIẾN TẾ TRĂNG MÁU, tự tay hiến tế quân đoàn\nmình yêu quý nhất để CHẶT ĐỨT NHÂN TÍNH thăng hoa thành Tân Thần"]
-    C --> D["HIỆP SĨ TIÊN PHONG CỦA BÌNH MINH:\nBạn là người duy nhất THẦN ÁNH SÁNG công nhận\nLên đường dẹp loạn thu thập Thần Khí cho ngày đại lễ"]
+    A["THỜI HỒNG HOANG NGUYÊN THỦY:\nChỉ có THE FIRST OLD GOD (Cổ Thần Đầu Tiên)\nThực thể hỗn mang vĩ đại sinh ra vạn vật"] 
+    --> B["SỰ PHÂN RÃ THÁI CỔ:\nCổ Thần Đầu Tiên ngủ vùi, phân tách thành 4 quy luật tự nhiên khổng lồ:\n1. Ánh Sáng (Trật tự) - 2. Bóng Tối (Phân rã)\n3. Đói Khát (Sinh tồn) - 4. Hủy Diệt (Biến thiên)"]
+    B --> C["THẢM HỌA PHÀM NHÂN (BẦY KIẾN DƯỚI CHÂN VOI):\nBốn Cổ Thần vận động vô cảm, mỗi lần cựa mình gây đại hồng thủy,\nhạn hán, động đất, nghiền nát hàng triệu sinh linh phàm trần"]
+    C --> D["CUỘC CHIẾN XIỀNG XÍCH (THE BINDING WAR):\nHoàng Đế Khởi Nguyên dùng THÉP THIÊN THẠCH ngoài vũ trụ\nlợi dụng tương khắc giữa 4 Cổ Thần đúc thành TỨ ĐẠI THẦN KHÍ\nThu nhỏ chân thân khổng lồ giam vào 4 món bảo khí định quốc!"]
+    D --> E["ĐẾ QUỐC CỔ ĐẠI SỤP ĐỔ - NỘI CHIẾN TỨ QUÂN:\nHoàng triều tan rã, 4 quân đoàn cướp đoạt 4 Thần Khí chém giết lẫn nhau"]
+    E --> F["BIẾN CHẤT CỦA ĐOÀN TRƯỞNG KAELEN:\nKhám phá tàn tích đền thờ CỔ THẦN ĐẦU TIÊN (The First Old God)\nQuyết định KÍCH HOẠT LỄ HIẾN TẾ TRĂNG MÁU, tự tay hiến tế quân đoàn\nmình yêu quý nhất để CHẶT ĐỨT NHÂN TÍNH thăng hoa thành Tân Thần"]
 ```
 
-### 1.1. Bản Chất Tứ Đại Cổ Thần & Thần Khí Định Quốc
-* Thời lập quốc, các đại thuật sĩ cổ đại đã dùng sắt thiên thạch và xích nguyền phong ấn 4 thực thể nguyên sinh của đại địa vào **4 món Thần Khí**:
-  1. **Kiếm Đơn:** Giam cầm **Cổ Thần Ánh Sáng**. Đòi hỏi sự kỷ luật, điềm tĩnh tuyệt đối, chỉ ban phát uy lực khi người dùng đỡ đòn chuẩn xác.
-  2. **Cặp Vuốt Sắt:** Giam cầm **Cổ Thần Bóng Tối**. Mang bản tính cào xé hung hiểm, biến đổi máu đối thủ thành Hắc Huyết ăn mòn từ bên trong.
-  3. **Lưỡi Liềm:** Giam cầm **Cổ Thần Đói Khát**. Tầm quét rộng lớn, khao khát nuốt chửng sinh mệnh và hồi phục cho chủ nhân.
-  4. **Trọng Kiếm:** Giam cầm **Cổ Thần Hủy Diệt**. Sức nặng cơ bắp ngàn cân, bổ nứt mặt đất, siêu giáp phá vỡ mọi thế phòng ngự và bùng nổ cuồng nộ.
+### 1.0. Thần Phả Thái Cổ & Cuộc Chiến Xiềng Xích (The Binding War)
+* **Nguồn gốc Tứ Đại Cổ Thần:**
+  - Thuở sơ khai, vũ trụ chỉ tồn tại một thực thể tối sơ duy nhất: **The First Old God (Cổ Thần Đầu Tiên)** — khối hỗn mang vô thủy vô chung.
+  - Khi cõi trần thành hình, Cổ Thần Đầu Tiên chìm vào giấc ngủ vĩnh hằng và tự phân rã thành **Bốn Trụ Cột Quy Luật Tự Nhiên**:
+    1. **Cổ Thần Ánh Sáng:** Hiện thân của quy chuẩn, trật tự, lề lối và sự phán xét thanh tẩy lạnh lùng.
+    2. **Cổ Thần Bóng Tối:** Hiện thân của sự ẩn mật, bào mòn, phân hủy sinh mệnh và sự hoại diệt của hư vô.
+    3. **Cổ Thần Đói Khát:** Bản năng sinh tồn sơ khai nhất — cỏ cây hút dưỡng chất, dã thú ăn thịt, sự nuốt chửng vô tận để kéo dài sinh mệnh.
+    4. **Cổ Thần Hủy Diệt:** Sức mạnh cơ học và biến thiên địa chất — động đất, núi lửa sụp đổ, sự phá hủy dữ dội để tái sinh chu kỳ đất trời mới.
+  - *Bản chất của Cổ Thần:* Chúng không mang đạo đức thiện hay ác, mà là **những lực lượng tự nhiên khổng lồ và vô cảm tuyệt đối**. Mỗi bước di chuyển hay hơi thở của chúng đều gây ra đại hồng thủy, hạn hán và dịch bệnh, giẫm nát các nền văn minh phàm trần như loài người giẫm lên bầy kiến.
+* **Cuộc Chiến Xiềng Xích (The Binding War) — Loài người nghịch thiên:**
+  - Đứng trước nguy cơ diệt vong, vị Hoàng Đế Khởi Nguyên của loài người cùng các thuật sĩ cổ đại đã tìm thấy **Thép Thiên Thạch** — loại khoáng thạch vũ trụ duy nhất không chịu sự chi phối của các quy luật đại địa.
+  - Trải qua cuộc viễn chinh đẫm máu ngàn năm, con người đã lợi dụng quy luật tương khắc tự nhiên giữa 4 Cổ Thần (Ánh Sáng khắc chế Bóng Tối, Đói Khát kiềm tỏa Hủy Diệt) kết hợp cùng sắt thiên thạch để **rút cạn chân thân khổng lồ của Tứ Đại Cổ Thần, giam cầm chúng vào 4 món Thần Khí Định Quốc**.
+  - Bốn bảo khí này trở thành trụ cột thái bình, giúp đế quốc hưng thịnh suốt hàng thiên niên kỷ.
+
+### 1.1. Bản Chất Tứ Đại Cổ Thần Ngự Trong Thần Khí
+1. **Kiếm Đơn:** Giam cầm **Cổ Thần Ánh Sáng**. Đòi hỏi sự kỷ luật, điềm tĩnh tuyệt đối, chỉ ban phát uy lực khi người dùng đỡ đòn chuẩn xác.
+2. **Cặp Vuốt Sắt:** Giam cầm **Cổ Thần Bóng Tối**. Mang bản tính cào xé hung hiểm, biến đổi máu đối thủ thành Hắc Huyết ăn mòn từ bên trong.
+3. **Lưỡi Liềm:** Giam cầm **Cổ Thần Đói Khát**. Tầm quét rộng lớn, khao khát nuốt chửng sinh mệnh và hồi phục cho chủ nhân.
+4. **Trọng Kiếm:** Giam cầm **Cổ Thần Hủy Diệt**. Sức nặng cơ bắp ngàn cân, bổ nứt mặt đất, siêu giáp phá vỡ mọi thế phòng ngự và bùng nổ cuồng nộ.
 
 ### 1.2. Cuộc Chiến Tứ Quân (The War of Four Banners)
-* Khi hoàng triều sụp đổ, 4 quân đoàn lớn xâu xé vương quốc trong biển máu:
+* Khi hoàng đế băng hà không người kế vị, 4 đại quân đoàn cát cứ cướp lấy 4 Thần Khí, xâu xé vương quốc trong biển máu tranh đoạt ngôi báu:
   1. **Quân Đoàn Bình Minh (The Knights of Sunrise - Phe ta):** Do Đoàn trưởng Kaelen thống lĩnh, giương cao ngọn cờ rạng đông lập lại hòa bình, nắm giữ Kiếm Đơn Ánh Sáng.
   2. **Quân Đoàn Ám Ảnh Dạ Hành (The Shadow Brotherhood):** Cố thủ trong pháo đài ngầm phía Bắc, dùng Vuốt Bóng Tối ám sát và gieo rắc sự tàn bạo.
   3. **Giáo Hội Phàm Thực (The Gluttonous Coven):** Thống trị vùng đầm lầy và hầm mộ phía Đông, dùng Lưỡi Liềm thu hoạch sinh mệnh để nuôi cơn đói vô tận.
@@ -40,7 +55,8 @@ flowchart TD
 ```mermaid
 flowchart LR
     subgraph BETRAYAL_LORE["BI KỊCH & ĐỘNG CƠ CỦA ĐOÀN TRƯỞNG KAELEN"]
-        K1["1. THIÊN TÀI TỰ TIN LÀ CHOSEN ONE:\nKhai quật Kiếm Ánh Sáng bị phản phệ dữ dội\nKiếm chọn người lính vô danh bên cạnh (Bạn)"]
+        K0["0. CỨU MẠNG BẠN NĂM XƯA:\nKaelen cứu Bạn khỏi ngôi làng bị cướp phá rực lửa,\ntruyền dạy kiếm thuật, là người anh cả mà bạn dốc lòng phụng sự"]
+        --> K1["1. THIÊN TÀI TỰ TIN LÀ CHOSEN ONE:\nKhai quật Kiếm Ánh Sáng bị phản phệ dữ dội\nKiếm chọn người lính vô danh bên cạnh (Bạn)"]
         --> K2["2. TẬP KÍCH BỞI SHADOW BROTHERHOOD:\nBất lực nhận ra con người chỉ là sâu bọ trước Cổ Thần\nChính Bạn vung Kiếm cứu sống Kaelen\n-> Nhen nhóm tham vọng thăng Thần tối cao"]
         --> K3["3. ĐỀN THỜ CỔ THẦN ĐẦU TIÊN DƯỚI HANG ĐỘNG:\nDẹp quái cứu làng, phát hiện Tàn Dư The First Old God\nBiết được cấm thuật 'Lễ Hiến Tế Trăng Máu'"]
         --> K4["4. TỰ TRẢM NHÂN TÍNH ĐỂ THĂNG THẦN:\nYêu quý quân đoàn tha thiết, nhưng nhân tính là xiềng xích\n-> Tự tay hiến tế thứ quý giá nhất đời mình\nđể vứt bỏ trái tim phàm trần, hóa thân Tân Thần!"]
@@ -48,26 +64,34 @@ flowchart LR
 ```
 
 ### 2.1. Nhân Vật Chính — Người Mang Ngọn Lửa Bình Minh Duy Nhất
-* **Xuất thân:** Bạn là Đội Trưởng Tiên Phong của Quân Đoàn Bình Minh — cánh tay phải đắc lực và đáng tin cậy nhất của Đoàn trưởng Kaelen.
-* **Người Được Thần Ánh Sáng Chọn:**
-  - Khi Quân Đoàn Bình Minh khai quật thanh **Kiếm Đơn**, chính Kaelen với tất cả sự tự tin của một thiên tài đã cố gắng nắm lấy chuôi kiếm. Nhưng thanh thần kiếm từ chối hắn thậm chí phản phệ dữ dội, phóng hào quang thiêu đốt da thịt bàn tay hắn.
-  - Ngược lại, khi bạn bước tới chạm vào chuôi kiếm, vầng hào quang hoàng kim bùng nổ thuận phục. **Thần Ánh Sáng** đã công nhận bạn là người duy nhất đủ sự điềm tĩnh, chuẩn mực và kiên định để làm chủ nhân.
-* **Sứ Mệnh:** Tận tụy với lý tưởng và tình huynh đệ cùng Kaelen, bạn nhận lệnh mang thanh kiếm xuất chinh dẹp loạn 3 cánh quân phản nghịch để mang 3 Thần Khí về cứu rỗi vương quốc.
+* **Bi kịch thời thơ ấu & Ân tình cứu mạng của Kaelen:**
+  - Trong thời kỳ hoàng triều sụp đổ, các băng đảng cướp bóc và tàn quân chiến tranh hoành hành càn quét. Ngôi làng biên cảnh của bạn bị thiêu rụi hoàn toàn, gia đình bị tàn sát đẫm máu.
+  - Bạn lúc đó chỉ là một đứa trẻ gầy guộc, bị dồn vào chân tường đá rực lửa, bất lực chờ chết trước lưỡi đao tàn bạo của lũ cướp.
+  - Giữa biển lửa và khói đặc, Kaelen xuất hiện trong bộ giáp bạc rực rỡ như vị thần giáng thế. Một nhát kiếm của hắn chém bay quân cướp, dập tắt ngọn lửa tử thần.
+  - Kaelen quỳ xuống, dùng chính vạt áo choàng lau vết máu trên gương mặt bạn, chìa bàn tay ra và nói:
+    > *"Đừng sợ. Hãy lau khô nước mắt và nắm lấy thanh kiếm này. Từ nay, ta sẽ là gia đình của ngươi, và chúng ta sẽ cùng nhau thắp lại bình minh cho cõi đời tàn tạ này."*
+* **Tình thầy trò & Huynh đệ khắc cốt ghi tâm:**
+  - Kaelen mang bạn về quân ngũ, đích thân nuôi dưỡng và truyền dạy từng thế kiếm, từng nhịp đỡ đòn (Parry `"KENG!"`) mà bạn thành thục cho tới tận hôm nay. Đối với bạn, Kaelen không chỉ là vị chỉ huy tối cao, mà là **ân nhân cứu mạng, người thầy, người anh cả, và là toàn bộ chân lý sống của bạn**.
+  - Bạn chiến đấu kiên cường, trở thành Đội Trưởng Tiên Phong của Quân Đoàn Bình Minh — cánh tay phải đáng tin cậy nhất mà Kaelen tự hào nhất.
+* **Lý do Kiếm Đơn Ánh Sáng chọn Bạn thay vì Kaelen:**
+  - Khi Quân Đoàn Bình Minh khai quật thanh **Kiếm Đơn**, chính Kaelen với sự kiêu ngạo của một thiên tài đã cố gắng nắm lấy chuôi kiếm. Nhưng thanh kiếm từ chối hắn thậm chí phản phệ dữ dội, phóng hào quang thiêu đốt bàn tay hắn.
+  - Ngược lại, khi bạn chạm vào chuôi kiếm, vầng hào quang hoàng kim bùng nổ thuận phục.
+  - **Ý nghĩa triết lý sâu sắc:** Kiếm Ánh Sáng từ chối Kaelen vì tâm trí hắn đã bị vẩn đục bởi lòng kiêu hãnh và tham vọng quyền lực. Thanh kiếm chọn Bạn vì trong trái tim Bạn vẫn giữ trọn vẹn **sự điềm tĩnh, lòng trung kiên và tinh thần bảo vệ thuần khiết mà chính Kaelen thuở ban đầu đã truyền dạy cho bạn**!
 
 ### 2.2. Đoàn Trưởng Kaelen — Từ Kiêu Hùng Bất Bại Đến Quyết Định Tuyệt Tình Hóa Thần
 * **Hào quang thiên tài & Cú sốc đầu tiên:**
   - Kaelen là một vị tướng tài ba xuất chúng, kiếm thuật bẩm sinh và tài thao lược khiến muôn dân xưng tụng, hàng vạn chiến binh tự nguyện quy phục dưới trướng. Hắn luôn kiêu hãnh tin rằng mình chính là "Kẻ Được Chọn" của thần linh.
-  - Niềm tin ấy vỡ vụn khi thanh Kiếm Đơn Ánh Sáng cự tuyệt hắn và chọn Bạn.
+  - Niềm tin ấy vỡ vụn khi thanh Kiếm Đơn Ánh Sáng cự tuyệt hắn và chọn Bạn — đứa trẻ năm xưa hắn từng cưu mang.
 * **Cú ngã nhận thức trước The Shadow Brotherhood:**
   - Trong một lần Quân Đoàn Bình Minh bị quân đoàn *The Shadow Brotherhood* phục kích đẫm máu, Kaelen lần đầu tiên tận mắt chứng kiến sức mạnh hủy diệt kinh hoàng của các Cổ Thần. 
   - Đứng trước quyền năng siêu nhiên ấy, Kaelen bàng hoàng nhận ra tài năng phàm trần của mình nhỏ bé và bất lực như loài sâu bọ; và cay đắng hơn cả, chính Bạn — người mang Kiếm Ánh Sáng — đã phải vung kiếm đỡ đòn, cứu lấy mạng sống của hắn. Nỗi nhục nhã và nỗi sợ hãi trước sự hữu hạn của kiếp người đã biến chất, nhen nhóm trong lòng hắn tham vọng tột cùng: *Hắn không thèm làm một phàm nhân ưu tú nữa, hắn phải bước lên hàng ngũ Thần Linh Tối Cao.*
 * **Phát hiện tàn tích Cổ Thần Đầu Tiên (The First Old God):**
   - Trong một lần dẫn quân dẹp loạn giải cứu một ngôi làng biên cảnh bị quái vật tàn sát, Kaelen lần theo dấu vết lũ quái vật vào sâu trong một hang động ngầm cổ xưa.
-  - Tại đây, hắn phát hiện ra phế tích của một ngôi đền cổ — nơi phong ấn **Tàn Dư Của The First Old God (Cổ Thần Đầu Tiên)**, cội nguồn tối sơ từng sinh ra vạn vật.
-  - Tiếp xúc với tàn dư này, Kaelen thấu suốt bản chất thế giới: Cơ thể phàm trần nếu cưỡng ép dung nạp 4 Cổ Thần sẽ nổ tung nát vụn. Con đường duy nhất để thăng hoa thành "Tân Thần" chính là kích hoạt **"Lễ Hiến Tế Trăng Máu"** mượn tàn dư của Cổ Thần Đầu Tiên làm vật dẫn dung hợp.
+  - Tại đây, hắn phát hiện ra phế tích của một ngôi đền cổ — nơi phong ấn **Tàn Dư Của The First Old God (Cổ Thần Đầu Tiên)**, cội nguồn tối sơ từng phân rã thành 4 Cổ Thần.
+  - Tiếp xúc với tàn dư này, Kaelen thấu suốt bí mật thái cổ: 4 Cổ Thần vốn là 4 mảnh phân tách của Cổ Thần Đầu Tiên. Muốn hợp nhất cả 4 nguồn sức mạnh mà không bị xé nát, bắt buộc phải dùng tàn dư Cổ Thần Đầu Tiên làm vật dẫn dung hợp qua **"Lễ Hiến Tế Trăng Máu"**.
 * **Động cơ bi kịch: Tự tay chặt đứt mối liên kết cuối cùng với nhân tính:**
   - Điều kiện nghiệt ngã nhất của Lễ Hiến Tế Trăng Máu không phải là máu kẻ thù, mà là kẻ thăng thần phải **tẩy sạch hoàn toàn nhân tính yếu đuối** — thứ khiến linh hồn người phàm bị thiêu rụi trước thần uy vô cảm.
-  - Kaelen **thực sự yêu quý Quân Đoàn Bình Minh**. Hắn trân trọng từng người anh em đã cùng hắn vào sinh ra tử, yêu ánh hào quang rạng đông mà họ đã cùng nhau tạo dựng. Và chính vì tình cảm sâu nặng ấy là **sợi dây ràng buộc nhân tính lớn nhất đời hắn**, Kaelen đã đưa ra một quyết định tàn độc đến ghê rợn: *Hiến tế toàn bộ quân đoàn dưới Trăng Máu*.
+  - Kaelen **thực sự yêu quý Quân Đoàn Bình Minh và đặc biệt yêu thương Bạn**. Các bạn là gia đình duy nhất, là sợi dây ràng buộc nhân tính lớn nhất đời hắn. Và chính vì tình cảm sâu nặng ấy, Kaelen đã đưa ra quyết định tàn khốc: *Hiến tế toàn bộ quân đoàn dưới Trăng Máu*.
   - Hắn hiến tế những người mình yêu quý nhất không phải vì căm ghét hay coi họ là lũ gia súc rẻ tiền, mà là nhát kiếm tự tay đâm vào tim mình để giết chết triệt để phần "người", bước qua đống xác của tình huynh đệ để nghênh đón ngai vàng của Tân Thần vô cảm!
 
 ---

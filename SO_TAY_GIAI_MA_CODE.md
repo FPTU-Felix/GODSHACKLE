@@ -1,4 +1,4 @@
-# 📖 SỔ TAY GIẢI MÃ KIẾN TRÚC CODE: GODSHACKLE (PHƯỢC THẦN CHI TỎA)
+# 📖 SỔ TAY GIẢI MÃ KIẾN TRÚC CODE: ASHEN DAWN (HÔI TẪN LÊ MINH)
 ### *(Dành riêng cho bạn - Người mới bắt đầu, không cần biết sâu về code vẫn hiểu 100%)*
 
 > **Chào bạn!** Cuốn sổ tay này được biên soạn để bạn làm chủ toàn bộ kiến trúc mã nguồn trong dự án.  

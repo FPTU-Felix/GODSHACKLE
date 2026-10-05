@@ -1,29 +1,29 @@
 # TÀI LIỆU THIẾT KẾ GAME TOÀN DIỆN (COMPREHENSIVE GAME DESIGN DOCUMENT)
-**Tên dự án:** *GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)*  
+**Tên dự án:** *ASHEN DAWN: HÔI TẪN LÊ MINH (The Ashen Eclipse)*  
 **Thể loại:** 2D Fast-paced Dark Fantasy Action Platformer (Chặt chém tốc độ cao, Đối kháng phản xạ)  
 **Phong cách hình ảnh:** 2D Side-scrolling Gothic Dark Fantasy (Đồ họa vẽ tay 2D, tương phản sáng tối gắt Chiaroscuro, giáp sắt rỉ sét, đường nét sắc nhọn)  
 **Trọng tâm trải nghiệm (Core Fantasy):** Cảm giác bay nhảy tự do ("phiêu"), chặt chém đanh thép ("đã tay"), né đòn bất tử (I-frames Dash), phản đòn nảy lửa (Parry "KENG!"), và tự do luân chuyển 4 phong cách chiến đấu của Tứ Đại Thần Khí.  
 **Cơ chế Boss đặc quyền:** **MỖI BOSS 2 PHASE: Thống Soái Cánh Quân (Đấu võ nghệ 1v1 tốc độ cao) $\rightarrow$ Cổ Thần Bung Xích (Chiến quái thú khổng lồ) $\rightarrow$ Thu phục Cổ Thần vào kho vũ khí của người chơi!**  
-**Trùm Cuối Tối Thượng:** **ĐOÀN TRƯỞNG KAELEN & THẦN THỂ DUNG HỢP (The Usurper God) $\rightarrow$ SECRET FINAL BOSS: CỔ THẦN ĐẦU TIÊN (The First Old God).**
+**Trùm Cuối Tối Thượng:** **ĐOÀN TRƯỞNG KAELEN & THẦN THỂ DUNG HỢP (The Usurper God) $\rightarrow$ SECRET FINAL BOSS: CỔ THẦN ĐẦU TIÊN (The First Old God) tại Ải 5.**
 
 ---
 
 ## 1. BỐI CẢNH THẾ GIỚI & CỐT TRUYỆN (WORLD LORE)
 
-### 1.1. Cuộc Nội Chiến Tứ Quân & Tứ Đại Thần Khí
-- **Tứ Đại Cổ Thần:** Bốn nguồn sức mạnh nguyên sinh của đại địa bị Giáo triều cổ đại phong ấn vào 4 bảo khí định quốc: **Kiếm Đơn** (Ánh Sáng), **Cặp Vuốt Sắt** (Bóng Tối), **Lưỡi Liềm** (Đói Khát), và **Trọng Kiếm** (Hủy Diệt).
-- **Đại Loạn Tứ Quân:** Vương quốc sụp đổ, 4 quân đoàn lớn tranh đoạt thần quyền:
-  1. **Quân Đoàn Bình Minh (The Knights of Sunrise):** Do Đoàn trưởng Kaelen thống lĩnh, giương ngọn cờ rạng đông lập lại hòa bình, nắm giữ Kiếm Đơn Ánh Sáng.
-  2. **Quân Đoàn Ám Ảnh Dạ Hành:** Cố thủ trong pháo đài ngầm phía Bắc, dùng Vuốt Bóng Tối ám sát tướng lĩnh.
-  3. **Giáo Hội Phàm Thực:** Chiếm giữ đầm lầy hầm mộ phía Đông, dùng Lưỡi Liềm thu hoạch sinh mệnh nuôi cơn đói.
-  4. **Quân Thiết Bọc Hủy Diệt:** Cố thủ trong thành trì đá đen, dùng Trọng Kiếm cơ bắp nghiền nát mọi thứ.
-- **Kẻ Được Chọn Của Thần Ánh Sáng:** Bạn là Đội Trưởng Tiên Phong của Quân Đoàn Bình Minh — người duy nhất được Thần Ánh Sáng trong Kiếm Đơn công nhận sau khi thanh kiếm từ chối và phản phệ Kaelen. Bạn nhận lệnh của Kaelen mang kiếm dẹp loạn 3 cánh quân phản nghịch để hoàn thành đại nghiệp.
+### 1.1. Thần Phả Thái Cổ & Cuộc Chiến Xiềng Xích (The Binding War)
+- **Cổ Thần Đầu Tiên & Tứ Đại Quy Luật:** Thuở hồng hoang, thực thể vô thủy vô chung *The First Old God* phân tách thành 4 lực lượng tự nhiên khổng lồ và vô cảm: **Ánh Sáng** (Trật tự, lề lối), **Bóng Tối** (Bào mòn, phân hủy), **Đói Khát** (Sinh tồn, nuốt chửng), và **Hủy Diệt** (Biến thiên, nghiền nát). Các Cổ Thần không mang thiện ác, nhưng mỗi lần vận động đều gây nên thiên tai hủy diệt hàng triệu sinh mạng phàm trần như bầy kiến.
+- **Cuộc Chiến Xiềng Xích (The Binding War):** Để cứu loài người khỏi tuyệt diệt, Hoàng Đế Khởi Nguyên đã dùng **Thép Thiên Thạch** (khoáng thạch vũ trụ không chịu quy luật trần thế) cùng quy luật tương khắc tự nhiên để rút cạn chân thân 4 Cổ Thần, phong ấn chúng vào **Tứ Đại Thần Khí**: Kiếm Đơn, Cặp Vuốt Sắt, Lưỡi Liềm, và Trọng Kiếm.
+- **Nội Chiến Tứ Quân:** Hoàng triều sụp đổ, 4 quân đoàn lớn cướp lấy 4 Thần Khí tranh đoạt thần quyền: Quân Đoàn Bình Minh (Kiếm Đơn), Quân Đoàn Ám Ảnh Dạ Hành (Cặp Vuốt), Giáo Hội Phàm Thực (Lưỡi Liềm), và Quân Thiết Bọc Hủy Diệt (Trọng Kiếm).
 
-### 1.2. Bi Kịch Của Đoàn Trưởng Kaelen & Tàn Dư The First Old God
-- **Cú Ngã Nhận Thức & Tham Vọng Thăng Thần:** Kaelen là một vị tướng thiên tài bẩm sinh, luôn tự tin là "Kẻ Được Chọn". Sau khi bị Kiếm Ánh Sáng từ chối và bị quân đoàn *The Shadow Brotherhood* tập kích, hắn tận mắt chứng kiến sức mạnh hủy diệt của Cổ Thần và cay đắng nhận ra con người chỉ là sâu bọ. Chính Bạn đã vung kiếm cứu sống hắn. Nỗi tuyệt vọng và nhục nhã đã thúc đẩy một tham vọng điên cuồng: *Phải bước lên hàng ngũ Thần Linh tối cao.*
-- **Đền Thờ Dưới Hang Động & Tàn Dư The First Old God:** Trong một lần dẹp loạn cứu một ngôi làng bị quái vật tàn sát, Kaelen lần theo hang động nguồn cơn quái vật và phát hiện phế tích đền thờ phong ấn **Tàn Dư của Cổ Thần Đầu Tiên (The First Old God)**. Tại đây, hắn học được cấm thuật: Để dung nạp trọn vẹn 4 Cổ Thần mà không bị nổ xác, hắn phải kích hoạt **"Lễ Hiến Tế Trăng Máu"** để thăng hoa thành Tân Thần.
-- **Động Cơ Bi Kịch: Tự Trảm Nhân Tính:** Cấm thuật đòi hỏi kẻ thăng thần phải tẩy sạch phần "người" yếu đuối. Vì Kaelen **thực sự yêu quý Quân Đoàn Bình Minh** (đây là sợi dây nhân tính lớn nhất đời hắn), hắn đã quyết định tự tay hiến tế toàn bộ quân đoàn dưới Trăng Máu — hy sinh thứ quý giá nhất để giết chết trái tim phàm trần, bước lên ngai thần vô cảm!
-- **Sứ Mệnh Ngăn Chặn:** Tại Ngai Vàng Kinh Đô, chứng kiến Kaelen kích hoạt đại tế đàn biến anh em thành Huyết Kén Thần Tính, bạn rút Kiếm Ánh Sáng đứng lên tử chiến ngăn chặn người anh em phản đạo!
+### 1.2. Ân Tình Cứu Mạng & Quá Khứ Của Nhân Vật Chính
+- **Đốm Lửa Tàn Giữa Làng Tro:** Năm xưa khi chiến loạn nổ ra, ngôi làng của Bạn bị cướp bóc thiêu rụi, gia đình bị tàn sát. Giữa lúc bạn bất lực chờ chết trước mũi đao, Đoàn Trưởng Kaelen xuất hiện trong giáp bạc rực rỡ, chém tan quân cướp và lau khô nước mắt cứu sống bạn.
+- **Tình Huynh Đệ & Thuận Phục Thần Kiếm:** Kaelen mang bạn về quân ngũ, nuôi nấng và đích thân dạy dỗ từng nhát chém, từng nhịp đỡ đòn Parry ("KENG!"). Kaelen là ân nhân, sư phụ và người anh cả mà bạn dốc lòng phụng sự. Khi khai quật Kiếm Đơn, thanh kiếm cự tuyệt Kaelen vì tâm trí hắn đã vẩn đục lòng kiêu ngạo; ngược lại, kiếm thuận phục Bạn vì bạn vẫn giữ trọn vẹn sự điềm tĩnh và tinh thần hiệp sĩ bảo vệ thuần khiết mà chính Kaelen năm xưa đã gieo vào lòng bạn.
+
+### 1.3. Bi Kịch Sa Ngã Của Kaelen & Tàn Dư The First Old God
+- **Cú Ngã Nhận Thức:** Bị Kiếm từ chối và bị quân đoàn *The Shadow Brotherhood* tập kích, Kaelen chứng kiến uy lực khủng khiếp của Cổ Thần, cay đắng nhận ra tài năng phàm trần của mình chỉ như sâu bọ trước thần thánh (và chính bạn vung kiếm cứu sống hắn). Tham vọng thăng thần nhen nhóm.
+- **Hang Động Đền Thờ Cổ & Cấm Thuật Hiến Tế:** Dẹp loạn cứu làng, Kaelen tìm thấy phế tích phong ấn **Tàn Dư của The First Old God**. Hắn thấu suốt bí mật: 4 Cổ Thần vốn là mảnh vỡ của Cổ Thần Đầu Tiên; muốn dung nạp cả 4 sức mạnh mà không bị xé nát, phải dùng tàn dư Cổ Thần Đầu Tiên làm vật dẫn trong **"Lễ Hiến Tế Trăng Máu"**.
+- **Tự Trảm Nhân Tính:** Để dung nạp thần tính vô cảm, Kaelen quyết định tự tay hiến tế thứ mà hắn trân quý nhất đời mình — Quân Đoàn Bình Minh và người đệ tử ruột (Bạn). Hắn dùng máu thịt của mười vạn anh em để đúc thành Huyết Kén Thần Tính, dập tắt nhân tính để bước lên ngai Tân Thần.
+- **Sứ Mệnh Diệt Thần:** Thoát chết nhờ ánh sáng thần kiếm, với đủ 4 Thần Khí trong tay, bạn chiến đấu xuyên qua Kinh Đô Huyết Ngục (Ải 4) để phá 3 Trụ Cột Huyết Mạch, rồi tiến lên Thiên Đỉnh Tháp (Ải 5) tử chiến ngăn chặn người anh em phản đạo!
 
 ---
 

@@ -1,5 +1,5 @@
 # 🎙️ KỊCH BẢN THU ÂM & LỒNG TIẾNG AI (VOICEOVER SCRIPT)
-**Dự án:** *GODSHACKLE: PHƯỢC THẦN CHI TỎA (The Bound Divinity)*  
+**Dự án:** *ASHEN DAWN: HÔI TẪN LÊ MINH (The Ashen Eclipse)*  
 **Mục đích:** Kịch bản lồng tiếng chi tiết từng phân cảnh dùng để đưa trực tiếp vào các công cụ AI Voice (ElevenLabs, Play.ht, v.v.).  
 **Ngôn ngữ thiết kế:** Song ngữ (Tiếng Anh Gothic cổ kính chuẩn quốc tế + Bản dịch Tiếng Việt cảm xúc).
 
@@ -35,55 +35,65 @@
 ```markdown
 [NARRATOR - TIẾNG ANH (DÙNG ĐỂ TẠO VOICE AI)]
 [deep, slow, weary voice]
-"When the ancient throne shattered... [pause 1.2s]
-The realm drowned in endless civil war. [pause 1.5s]
+"Long before our kingdoms rose... [pause 1.2s]
+The First Old God fractured into four uncaring titans: [pause 1.2s]
+Light. Shadow. Hunger. And Ruin. [pause 1.8s]
 
-Four armies tore the kingdom apart. [pause 1.0s]
-Each wielding a relic forged to bind a primordial god: [pause 1.2s]
-Light. Shadow. Hunger. And Ruin. [pause 2.0s]
+To save humanity from their trampling steps, [pause 1.0s]
+our ancestors forged chains of star-fallen iron... [pause 1.2s]
+locking the primal beasts into four sacred relics. [pause 1.5s]
 
-Under the banner of dawn, Commander Kaelen rallied us. [pause 1.0s]
-The Knights of Sunrise. [pause 1.5s]
+For a thousand years, those relics brought peace. [pause 1.2s]
+Until the ancient throne shattered. [pause 1.5s]
 
-He sought to wield the Blade of Light to end the slaughter. [pause 0.8s]
-Yet the divine steel rejected his grasp... [pause 0.8s]
-scorching his flesh with silent disdain. [pause 1.5s]
+Warlords tore the realm apart for divine power. [pause 1.0s]
+Bandits burned my home to cinders. [pause 1.2s]
+Amidst the flames... Commander Kaelen pulled me from the ash. [pause 1.5s]
+He taught me the discipline of steel. [pause 1.0s]
+He gave me a brotherhood under the banner of dawn: [pause 1.2s]
+The Knights of Sunrise. [pause 1.8s]
 
-The blade chose only one. [pause 1.0s]
-A vanguard knight. A disciplined blade. [pause 1.8s]
+When we unearthed the Blade of Light, [pause 0.8s]
+it rejected Kaelen's prideful grasp... [pause 0.8s]
+and chose me instead. [pause 1.5s]
 
-'Subdue the three rebel banners,' Kaelen commanded. [pause 1.0s]
-'Bring me their sacred arms. Together, we shall restore the dawn.' [pause 1.5s]
+'Bring me the other three relics, my brother,' Kaelen commanded. [pause 1.0s]
+'Together, we shall banish this darkness forever.' [pause 1.5s]
 
-We believed him. [pause 1.0s]
-And so... we marched into the storm."
+I would have bled to the bone for him. [pause 1.0s]
+And so... I marched into the storm."
 ```
 <!-- slide -->
 ```markdown
 [BẢN DỊCH TIẾNG VIỆT (PHỤ ĐỀ / HOẶC ĐỌC TIẾNG VIỆT)]
 (Giọng trầm khàn, chậm rãi, nặng trĩu bi thương)
-"Khi ngai vàng cổ đại vỡ tan...
-Vương quốc chìm ngập trong cuộc nội chiến triền miên.
-
-Bốn cánh quân xâu xé đất trời.
-Mỗi phe nắm giữ một Thần Khí giam cầm Cổ Thần nguyên sinh:
+"Thuở xa xưa trước khi các vương triều hưng thịnh...
+Cổ Thần Đầu Tiên đã phân tách thành bốn gã khổng lồ vô cảm:
 Ánh Sáng. Bóng Tối. Đói Khát. Và Hủy Diệt.
 
-Dưới ngọn cờ rạng đông, Đoàn trưởng Kaelen đã tập hợp chúng ta lại.
+Để cứu lấy loài người khỏi những bước chân giẫm đạp của chúng,
+tổ tiên chúng ta đã rèn nên những sợi xích bằng sắt thiên thạch...
+giam cầm bốn quái thú tối sơ vào bốn món Thần Khí thiêng liêng.
+
+Suốt một ngàn năm, những bảo khí ấy đã che chở cho nền thái bình.
+Cho đến ngày ngai vàng cổ đại sụp đổ.
+
+Các bạo chúa xâu xé vương quốc để tranh đoạt quyền năng thần thánh.
+Chiến tranh và cướp bóc thiêu rụi ngôi làng của ta thành tro tàn.
+Giữa biển lửa ấy... Đoàn trưởng Kaelen đã kéo ta ra khỏi đống tro tàn.
+Hắn dạy ta sự chuẩn mực của lưỡi kiếm.
+Hắn cho ta một mái ấm dưới ngọn cờ rạng đông:
 Quân Đoàn Bình Minh.
 
-Hắn muốn cầm lấy Thanh Kiếm Ánh Sáng để chấm dứt cuộc tàn sát.
-Thế nhưng thanh kiếm thần thánh đã từ chối bàn tay hắn...
-thiêu đốt da thịt hắn bằng sự khinh miệt lạnh lùng.
+Khi chúng ta khai quật Thanh Cổ Kiếm Ánh Sáng,
+thanh kiếm đã cự tuyệt sự kiêu ngạo của Kaelen...
+để rồi tự tìm đến và thuận phục trong tay ta.
 
-Thanh kiếm chỉ chọn duy nhất một người.
-Một người hiệp sĩ tiên phong. Một lưỡi gươm chuẩn mực.
+'Hãy mang ba Thần Khí còn lại về đây, người anh em của ta,' Kaelen hạ lệnh.
+'Cùng nhau, chúng ta sẽ xua tan màn đêm này mãi mãi.'
 
-'Hãy dẹp tan ba cánh loạn quân,' Kaelen hạ lệnh.
-'Hãy mang Thần Khí của chúng về đây. Cùng nhau, chúng ta sẽ mang ánh bình minh trở lại.'
-
-Chúng ta đã tin hắn.
-Và thế là... chúng ta bước vào tâm bão."
+Vì hắn, ta sẵn sàng đổ tới giọt máu cuối cùng.
+Và thế là... ta bước vào tâm bão."
 ```
 ````
 
