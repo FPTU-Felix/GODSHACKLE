@@ -8,12 +8,12 @@ extends CharacterBody2D
 # - Service:    Kiểm tra điều kiện is_on_floor() rồi gán velocity.y
 # - Repository: move_and_slide() thực thi đưa nhân vật bay lên rồi rơi xuống
 # ==============================================================================
-@onready var weapon: BaseWeapon = $Visual/WeaponDolorosa
+@onready var weapon: BaseWeapon = $Visual/WeaponSwordLight
 @export var max_health: int =100
 var current_health: int =100
 @onready var hurtbox: Hurtbox = $HurtBox
 # [SERVICE - CONFIG]: Các hằng số vật lý
-const SPEED = 280.0           # Tốc độ chạy ngang
+const SPEED = 280.0           # Tốc độ chạy ngang 280 px/s
 const GRAVITY = 980.0         # Trọng lực kéo rơi xuống đất
 const JUMP_VELOCITY = -420.0  # Lực bật nhảy lên cao (Số ÂM vì trục Y hướng lên trời là ÂM)
 const MAX_JUMP = 2
@@ -22,6 +22,7 @@ var facing_direction: int = 1
 const DASH_SPEED = 650.0
 const DASH_DURATION = 0.2
 const DASH_COOLDOWN = 0.4
+const attack_step_impluse = 80.0 # Lực chân khi vừa đánh vừa di chuyển
 var is_dashing: bool = false
 var can_dash: bool = true
 
@@ -47,16 +48,24 @@ func _physics_process(delta: float) -> void:
 
 	# 3. [DI CHUYỂN NGANG]: Bắt phím A / D
 	var direction = Input.get_axis("move_left", "move_right")
-	velocity.x = direction * SPEED
-	if direction !=0:
+	if direction != 0 and not (weapon and weapon.is_busy):
 		facing_direction = int(direction)
-		$Visual.scale.x=facing_direction
-		
+		$Visual.scale.x = facing_direction
+	if weapon and weapon.is_busy:
+		if is_on_floor():
+			if direction != 0:
+				velocity.x = move_toward(velocity.x, facing_direction*attack_step_impluse, SPEED*delta*2.0)
+				# move toward ( Giá trị hiện tại, giá trị đích, bước nhảy tối đa trong frame này)
+				# -> Gia tốc nên cần phải nhân với delta để tránh khựng delta là thời gian trôi qua giữa 2 frame
+			else:
+				velocity.x = move_toward(velocity.x, 0.0, SPEED * delta * 2.0)
+	else:
+		velocity.x = direction * SPEED
 	if Input.is_action_just_pressed("attack"):
-		weapon.attack()
+		weapon.attack()	
 	if Input.is_action_just_pressed("dash"):
 		start_dash()
-	# 4. [COMMIT]: Thực thi chuyển động trong game
+	# 4. [COMMIT]: Thực thi chuyển động
 	move_and_slide()
 	
 func start_dash()-> void:
@@ -64,18 +73,19 @@ func start_dash()-> void:
 		return
 	is_dashing = true
 	can_dash = false
-	$Visual.modulate.a = 1.0
+	$Visual.modulate.a = 0.4
 	
 	if hurtbox:
 		hurtbox.set_deferred("monitorable", false) 
 	await get_tree().create_timer(DASH_DURATION).timeout
+	if not is_inside_tree(): return # Tạm thời sau phase 1 sẽ để quản lý timer bằng _physical_process
 	if hurtbox:
 		hurtbox.set_deferred("monitorable", true)
-	
 	is_dashing = false
 	$Visual.modulate.a = 1.0
 	velocity.x = 0 # Vận tốc của nhân vật cần chuyển về 0 để k bị trượt
 	await get_tree().create_timer(DASH_COOLDOWN).timeout
+	if not is_inside_tree(): return
 	can_dash=true
 
 func _ready()->void:
@@ -83,7 +93,7 @@ func _ready()->void:
 	if hurtbox:
 		hurtbox.hit_received.connect(_on_hit_received)
 
-func _on_hit_received(damage: int, knockback_force: float, sin_amout: float) -> void:
+func _on_hit_received(damage: int, knockback_force: float) -> void:
 	current_health -= damage
 	print("💔 HIỆP SĨ BỊ TRÚNG ĐÒN! Mất ", damage, " máu! Còn lại: ", current_health)
 	$Visual.modulate = Color(1.0, 0.3, 0.3)

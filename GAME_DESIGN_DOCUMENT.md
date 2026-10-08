@@ -69,6 +69,18 @@ Tam giác chiến đấu vận hành xoay quanh: **CƠ ĐỘNG TỐC ĐỘ CAO �
 - Phản đòn (Parry Riposte): `+35%`.
 - Khi đầy 100%: Vũ khí rực sáng thần uy $\rightarrow$ Bấm **[E]** kích hoạt tuyệt kỹ tối thượng của Cổ Thần đang cầm.
 
+### 2.4. Cơ Chế Luân Chuyển "Switch Attack" (Chuyển Khí Trảm) *(Dự kiến: Cuối Phase 1 / Phase 2)*
+- **Mục tiêu thiết kế:** Cho phép luân chuyển và nối combo giữa các vũ khí mà không gây bùng nổ animation 2D (tránh vẽ ma trận frame chuyển tiếp $4 \times 4$) và không gây loạn phím cho người chơi.
+- **Thao tác điều khiển:** Dùng **1 nút bấm duy nhất: Phím [Q]** (hoặc `L1/LB` trên tay cầm) để xoay vòng giữa các Thần Khí đã mở khóa.
+- **Cách thức vận hành:**
+  - Khi đang thực hiện combo thường, nếu bấm **[Q]**, nhân vật không đứng đổi vũ khí tĩnh mà lập tức tung ra **đòn đánh chuyển giao đặc trưng (Switch Attack)** của vũ khí tiếp theo, rồi tự động chuyển sang cầm món đó:
+    - 🗡️ $\rightarrow$ 🩸 **Sang Vuốt Sắt:** Lướt biến bóng xé gió cào 1 nhát cực nhanh (áp sát mục tiêu, găm Máu Đen).
+    - 🩸 $\rightarrow$ ⛓️ **Sang Lưỡi Liềm:** Quét xích ngược 360 độ kéo giật bầy quái xung quanh về phía mình.
+    - ⛓️ $\rightarrow$ 🛡️ **Sang Trọng Kiếm:** Nhảy bổ nện đất từ trên không, phá nát khiên giáp và gây choáng (Stagger).
+    - 🛡️ $\rightarrow$ 🗡️ **Sang Kiếm Đơn:** Đâm một nhát chuẩn xác tích hợp khung Parry tự động 0.15s đỡ đòn phản công.
+  - Sau đòn Switch Attack, người chơi bấm tiếp nút Tấn công [J] sẽ thi triển combo của vũ khí mới.
+- **Lộ trình:** Tạm hoãn ở đầu dự án để tập trung hoàn thiện 100% cơ chế cho Kiếm Đơn Ánh Sáng trước; sẽ đưa vào thử nghiệm khi bắt đầu làm Cặp Vuốt Sắt ở cuối Phase 1 / Phase 2.
+
 ---
 
 ## 3. HỆ THỐNG TỨ ĐẠI THẦN KHÍ (MULTI-WEAPON ARSENAL)

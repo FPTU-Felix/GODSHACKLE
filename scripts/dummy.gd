@@ -15,9 +15,9 @@ func _ready() -> void:
 	if hurtbox:
 		hurtbox.hit_received.connect(_on_hit_received)
 		
-func _on_hit_received(damage:int, knockback_force:float, sin_amount:float):
+func _on_hit_received(damage:int, knockback_force:float):
 	current_health -= damage
-	print("⚔️ BÙ NHÌN BỊ CHÉM! Mất ", damage, " máu! Máu còn lại: ", current_health, " (Tội lỗi tích lũy: +", sin_amount, ")")
+	print("⚔️ BÙ NHÌN BỊ CHÉM! Mất ", damage, " máu! Máu còn lại: ", current_health)
 	
 	visual_box.color = Color(1.0, 1.0, 1.0)
 	await get_tree().create_timer(0.1).timeout

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b1m5k8q3n2yap"]
 
 [ext_resource type="Script" uid="uid://j7xrqtuhgb4" path="res://scripts/player.gd" id="1_player_script"]
-[ext_resource type="Script" uid="uid://5mu4umxb5eg5" path="res://scripts/weapons/weapon_dolorosa.gd" id="2_g2els"]
+[ext_resource type="Script" uid="uid://5mu4umxb5eg5" path="res://scripts/weapons/weapon_sword_light.gd" id="2_g2els"]
 [ext_resource type="Script" uid="uid://btg37uoa0fbeo" path="res://scripts/combat/hitbox.gd" id="3_qhqgy"]
 [ext_resource type="Script" uid="uid://dvt4ab80nvxc5" path="res://scripts/combat/hurtbox.gd" id="4_dqkch"]
 
@@ -36,19 +36,19 @@ offset_right = 20.0
 offset_bottom = -52.0
 color = Color(0.65, 0.15, 0.15, 1)
 
-[node name="WeaponDolorosa" type="Node2D" parent="Visual" unique_id=2118930751]
+[node name="WeaponSwordLight" type="Node2D" parent="Visual" unique_id=2118930751]
 script = ExtResource("2_g2els")
 
-[node name="SwordVisual" type="ColorRect" parent="Visual/WeaponDolorosa" unique_id=1957241155]
+[node name="SwordVisual" type="ColorRect" parent="Visual/WeaponSwordLight" unique_id=1957241155]
 offset_left = 21.0
 offset_top = -53.0
 offset_right = 66.0
 offset_bottom = -38.0
 
-[node name="Hitbox" type="Area2D" parent="Visual/WeaponDolorosa" unique_id=1913024065]
+[node name="Hitbox" type="Area2D" parent="Visual/WeaponSwordLight" unique_id=1913024065]
 script = ExtResource("3_qhqgy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Visual/WeaponDolorosa/Hitbox" unique_id=1142007005]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Visual/WeaponSwordLight/Hitbox" unique_id=1142007005]
 position = Vector2(43.75, -45.75)
 shape = SubResource("RectangleShape2D_dvsu6")
 

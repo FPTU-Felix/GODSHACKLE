@@ -1,9 +1,5 @@
-class_name WeaponDolorosa
+class_name WeaponSwordLight
 extends BaseWeapon
-
-# ==============================================================================
-# CỰ KIẾM DOLOROSA (LƯỠI KIẾM SẦU BI)
-# ==============================================================================
 
 @export var attack_duration: float=0.2
 @onready var sword_visual: ColorRect=$SwordVisual
@@ -13,7 +9,7 @@ var combo_reset_timer: float = 0.0
 const COMBO_WINDOW: float =0.5
 
 func _ready() -> void:
-	weapon_name = "Dolorosa"
+	weapon_name = "Kiếm Đơn Ánh Sáng"
 	damage=25
 	if sword_visual:
 		sword_visual.visible=false
@@ -39,21 +35,18 @@ func attack() -> void:
 			sword_visual.offset_bottom = -30.0
 			sword_visual.offset_right = 66.0
 			hitbox.damage = 25
-			hitbox.sin_amount = 15.0
 			combo_step = 2
 		2:
 			sword_visual.offset_top = -65.0
 			sword_visual.offset_bottom = -50.0
 			sword_visual.offset_right = 60.0
 			hitbox.damage = 25
-			hitbox.sin_amount = 15.0
 			combo_step = 3
 		3:
 			sword_visual.offset_top = -45.0
 			sword_visual.offset_bottom = -30.0
 			sword_visual.offset_right = 90.0
-			hitbox.damage = 45               
-			hitbox.sin_amount = 30.0         
+			hitbox.damage = 45                     
 			combo_step = 1
 	
 	sword_visual.visible=true
@@ -76,7 +69,6 @@ func dash_attack() -> void:
 	sword_visual.offset_right = 95.0
 	hitbox.damage = 35
 	hitbox.knockback_force = 260.0 # Lực đẩy văng quái cực mạnh
-	hitbox.sin_amount = 25.0
 	
 	sword_visual.visible=true
 	hitbox.activate()

@@ -16,7 +16,7 @@ Dự án hiện tại được tổ chức theo kiến trúc **Component-Based (
 | [`scenes/player.tscn`](file:///d:/Project/sin-eater/scenes/player.tscn) | Scene | **Hình thể Hiệp Sĩ**: Gồm khối va chạm thân thể (`CharacterBody2D`), khối hình ảnh hiển thị (`Visual`), Thần Khí gắn trên tay và vùng nhận đòn (`HurtBox`). |
 | [`scripts/player.gd`](file:///d:/Project/sin-eater/scripts/player.gd) | Script | **Não bộ di chuyển & phản xạ**: Điều khiển chạy (`A`/`D`), Nhảy đúp (`jump`), Lướt né bất tử I-frames (`dash`), và lắng nghe lệnh Parry/Attack. |
 | [`scripts/weapons/base_weapon.gd`](file:///d:/Project/sin-eater/scripts/weapons/base_weapon.gd) | Script | **Lớp Cơ Sở Thần Khí (Base Class)**: Khuôn mẫu chung cho mọi vũ khí Cổ Thần. Quy định các hành động: Chém thường, Lướt chém, Parry, và Cast đòn đặc biệt khi đầy Khát Máu. |
-| [`scripts/weapons/weapon_dolorosa.gd`](file:///d:/Project/sin-eater/scripts/weapons/weapon_dolorosa.gd) | Script | **Thần Khí Khởi Đầu: Kiếm Đơn Ánh Sáng**: Quản lý chuỗi Combo 3 nhát chém, Lướt chém, thanh Khát Máu (`bloodlust`), phản đòn Parry và đòn đặc biệt [E]. |
+| [`scripts/weapons/weapon_sword_light.gd`](file:///d:/Project/sin-eater/scripts/weapons/weapon_sword_light.gd) | Script | **Thần Khí Khởi Đầu: Kiếm Đơn Ánh Sáng**: Quản lý chuỗi Combo 3 nhát chém, Lướt chém, thanh Khát Máu (`bloodlust`), phản đòn Parry và đòn đặc biệt [E]. |
 | [`scenes/Dummy.tscn`](file:///d:/Project/sin-eater/scenes/Dummy.tscn) | Scene | **Bù nhìn tập đánh**: Mục tiêu thử nghiệm để test sát thương, kiểm tra va chạm đòn đánh. |
 | [`scripts/dummy.gd`](file:///d:/Project/sin-eater/scripts/dummy.gd) | Script | **Bộ nhận đòn của Bù nhìn**: Lắng nghe đòn chém từ Hurtbox, trừ máu, chớp trắng báo hiệu bị trúng đòn. |
 | [`scripts/combat/hitbox.gd`](file:///d:/Project/sin-eater/scripts/combat/hitbox.gd) | Script | **Lưỡi Kiếm (Vùng gây sát thương)**: `Area2D` mang thông số sát thương, lực đẩy lùi (`knockback_force`) và lượng nạp máu (`bloodlust_gain`). |
@@ -41,7 +41,7 @@ flowchart TD
         I4 -->|"Gọi sang Weapon"| W1["Combo 3 đòn cự kiếm"]
     end
 
-    subgraph WEAPON_LOGIC["3. XỬ LÝ TRONG WEAPON_DOLOROSA.GD"]
+    subgraph WEAPON_LOGIC["3. XỬ LÝ TRONG WEAPON_SWORD_LIGHT.GD"]
         W1 -->|"Bật Hitbox chém trúng quái"| H1["Chém trúng -> Nạp +15% Bloodlust"]
         H1 -->|"Khi Bloodlust đầy 100%"| E1["Sẵn sàng bấm [E] Cast Tuyệt Diệt Trảm"]
     end
@@ -64,7 +64,7 @@ func start_dash() -> void:
 ```
 
 ### 2. Cơ chế Khát Máu & Đòn Đặc Biệt (Bloodlust & Eldritch Cast):
-Trong file [`scripts/weapons/weapon_dolorosa.gd`](file:///d:/Project/sin-eater/scripts/weapons/weapon_dolorosa.gd):
+Trong file [`scripts/weapons/weapon_sword_light.gd`](file:///d:/Project/sin-eater/scripts/weapons/weapon_sword_light.gd):
 - Mỗi lần chém trúng quái vật, biến `bloodlust` tăng dần từ `0` đến `100`.
 - Khi `bloodlust >= 100`: Thần Khí bùng nổ sức mạnh Cổ Thần, cho phép người chơi bấm **[E]** gọi hàm `cast_special()`:
   - Vung đòn Tuyệt Diệt Trảm gây sát thương cực lớn.

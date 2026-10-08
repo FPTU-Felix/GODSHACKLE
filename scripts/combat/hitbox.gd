@@ -7,7 +7,6 @@ extends Area2D
 
 @export var damage: int =25
 @export var knockback_force: float = 180.0
-@export var sin_amount: float = 15.0
 
 var is_active: bool = false
 func _ready() -> void:
